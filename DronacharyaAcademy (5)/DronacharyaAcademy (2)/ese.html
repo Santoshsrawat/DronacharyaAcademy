@@ -1,0 +1,758 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dronacharya Academy</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.25/css/jquery.dataTables.css">
+
+
+  <style>
+
+    .has-megamenu li a {
+      text-decoration: none;
+      color: black;
+      list-style: circle;
+    }
+
+    @media (min-width:900px) and (max-width:1400px) {
+      .megamenu {
+        width: 50% !important;
+        /* margin: 0 30px !important;  */
+      }
+    }
+
+    @media (min-width:992px) and (max-width:1400px) {
+       
+     
+
+      #nda-about img{
+        height: 100%;
+      }
+
+    }
+
+
+    #table1 {
+            font-family: Arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        #table1  th, td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        #table1 th {
+            background-color: #f2f2f2;
+        }
+
+        #table2 {
+            font-family: Arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        #table2 th, td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        #table2 th {
+            background-color: #f2f2f2;
+        }
+
+        @media only screen and (max-width: 600px) {
+            #table2  th, td {
+                font-size: 8px;
+            }
+        }
+
+
+        @media only screen and (max-width: 600px) {
+            #table1  th, td {
+                font-size: 8px;
+            }
+        }
+
+  </style>
+
+</head>
+
+<body>
+
+  <nav class="navbar bg-body-tertiary d-flex">
+    <div class="container-fluid mx-lg-5 mx-md-2 mx-sm-1">
+      <a class="navbar-brand" href="#" data-aos="fade-right" data-aos-duration="2000">
+        <img src="./img/cropped-logo-removebg-preview.png" alt="Logo" width="40" height="30"
+          class="d-inline-block align-text-top" />
+        Dronacharya Academy
+      </a>
+      <div class="add" data-aos="fade-right" data-aos-duration="2000">
+        <ul class="d-flex justify-content-end" style="list-style: none; " id="list-add">
+          <li class="me-4">
+            <i class="fas fa-user-graduate fa-lg"></i> <a href="registration.html" style="
+                  text-decoration: none;
+                  color:black;
+                ">Online Admission</a>
+          </li>
+          <li class="me-4"><i class="fas fa-book fa-lg"></i> <a href="career.html" style="
+                text-decoration: none;
+                color:black;
+              ">Careers</a></li>
+          <li class=""><i class="fas fa-user fa-lg"></i> <a href="contact.html" style="
+                  text-decoration: none;
+                  color:black;
+                ">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #1a237e">
+    <div class="container-fluid">
+      <!-- <a class="navbar-brand" href="#">Brand</a> -->
+      <button class="navbar-toggler ms-auto text-white" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-center" id="main_nav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link text-white" href="index.html">HOME</a>
+          </li>
+         
+          
+          <li class="nav-item">
+            <a class="nav-link text-white" href="ese.html">ESE</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-white" href="#" data-bs-toggle="dropdown">GATE
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li>
+                <a class="dropdown-item" href="gate.html">About Gate</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="list-of-iits.html">Lists of IITS</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="list-of-iiits.html">Lists of IIITS</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="list-of-nits.html">Lists of NITS</a>
+              </li>
+               <li><a class="dropdown-item" href="gateexamsyllabs.html"> GATE EXAM Syllabus </a></li> 
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link text-white" href="ssc-je.html">SSC JE</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-white" href="#" data-bs-toggle="dropdown">COURSES
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li>
+                <a class="dropdown-item" href="">ESE + GATE : 1 Year Foundation Course</a>
+                <ul>
+                  <li>
+                    <a href="ESE+GATE1YearFoundationCourse.html" class="text-primary" style="text-decoration: none;">Regular</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a class="dropdown-item" href="">GATE : 1 Year Foundation Course</a>
+                <ul>
+                  <li>
+                    <a href="GATE1YearFoundationCourse.html" class="text-primary" style="text-decoration: none;">Regular</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a class="dropdown-item" href=""> SSC-JE / STATE-JE Course</a>
+                <ul>
+                  <li>
+                    <a href="STATE-JECourse.html" class="text-primary" style="text-decoration: none;">Regular</a>
+                  </li>
+                </ul>
+              </li>
+              
+             
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link text-white" href="batches.html">NEW BATCHES</a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link text-white" href="FeeStructure.html">FEE STRUCTURE</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="our-result.html">OUR RESULT</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-white" href="#" data-bs-toggle="dropdown">ABOUT US
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li>
+                <a class="dropdown-item" href="whychoseus.html">WHY DRONACHARYA ACADEMY</a>
+              </li>
+             
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="study-material.html">STUDY MATERIAL</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-white" href="#" data-bs-toggle="dropdown">DEFENCE
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li>
+                <a class="dropdown-item" href="nda.html">NDA</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="cds.html">CDS</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="afcat.html">AFCAT</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="agniveer.html">AGNIVEER</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="ssb.html">SSB</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="aboutRIMC.html">RIMC</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="mns.html"> MNS</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="sainik.html"> SAINIK SCHOOL</a>
+              </li>
+              
+            </ul>
+          </li>
+        
+          <li class="nav-item">
+            <a class="nav-link text-white" href="https://vervegenlms.com/">TEST SERIES</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+
+
+  <h2 class="text-center mt-5 mb-5">Engineering Services Examination(ESE), WHY ESE ?</h2>
+
+  <div class="container">
+    <p> Indian Engineering Services (IES) remains the most sought-after career for engineering graduates in
+        India. The Engineering Services Examination, commonly known as ESE, is conducted annually by
+        UPSCto recruit engineers in four domains, namely Civil, Mechanical, Electrical, Electronics &
+        Telecommunications for technical managerial posts.The UPSC ESE 2024 notification has been
+        released, and a total of approximately 167 vacancies are to be filled through the UPSC ESE 2024. It's a
+        golden opportunity for aspiring engineers to secure highly desired & prominent positions within
+        various government departments and organizations. The examination is a two-stage written
+        examination (Prelims & Mains) followed by an interview. The Engineering Services Examination is a prestigious and challenging examination in India due to its unique difficulty level and limited available
+        positions. Owing to a highly competitive selection procedure, IES officers carry high respect and status
+        and are mandated to manage and execute activities in diverse technical and managerial fields
+       </p>
+       <p> As we look forward to the year 2024, the UPSC ESE 2024 promises to be an important milestone in the
+        careers of aspiring engineers across the country.</p>
+        <p> These candidates, after the final selection, are posted in various Ministries and Departments of the GOI
+            such as Indian Railways, Telecom, Border Roads Organization, CPWD, CWC, CPES, NHAI, Naval
+            Armaments, IDSE, MES, Indian Ordnance Factories, etc.; however, the selected candidates can move
+            to any cadre, organization, agency, department, ministry, or PSUs of the Government of India. All
+            these final selected candidates are designated as class-1 gazetted officers.</p>
+
+            <h3>ESE2024 Eligibility
+            </h3>
+            <p> Acandidate must be either:</p>
+            <p> Acitizen of India or A subject of Nepal or A subject of Bhutan or
+                ATibetan refugee who came to India before the 1st January, 1962 with the intention of permanently
+                settling in India or A person of Indian origin who has migrated from Pakistan, Burma, Sri Lanka or
+                East African countries of Kenya, Uganda, the United Republic of Tanzania, Zambia, Malawi, Zaire and
+                Ethiopia or from Vietnam with the intention of permanently settling in India.
+                Provided that a candidate belongs to categories (b), (c) and (d) above shall be a person in whose favor a
+                certificate of eligibility has been issued by the Government of India.</p>
+                <h4> Age Limits: (As on 01/01/2024)</h4>
+                <p> Acandidate for this examination must have attained the age of 21 years and must not have attained the
+                    age of 30 years on the 1st January, 2024 i.e., he/she must have been born not earlier than 2nd January,
+                    1994 and not later than 1st January, 2003.</p>
+                    <p> The upper age-limit of 30 years will be relax able upto 35 years in the case of Government servants of
+                        the following categories, if they are employed in a Department/ Office under the control of any of the
+                        authorities mentioned in column 1 below and apply for admission to the examination for all or any of
+                        the Service(s)/Post(s) mentioned in column 2, for which they are otherwise eligible.</p>
+               <p> Acandidate who holds substantively a permanent post in the particular Department/Office concerned.
+                This relaxation will not be admissible to a probationer appointed against a permanent post in the
+                Department/Office during the period of his probation. However, this relaxation will be admissible to a
+                probationer so appointed provided he/she already retains a lien on a permanent post in a
+                Department/Office under the control of any of the authorities mentioned in column 1 below.</p> 
+                <h5> Acandidate who has been continuously in a temporary service on a regular basis in the particular
+                    Department/Office for at least 3 years on the 1st January, 2024.</h5>        
+  
+
+
+ 
+  <table class="mb-3">
+    <tr>
+        <th>Column 1</th>
+        <th>Column 2</th>
+    </tr>
+    <tr>
+        <td>Central Public Works Department</td>
+        <td>C.E.S. Group ‘A’, CE&MES Gr ‘A’</td>
+    </tr>
+    <tr>
+        <td> Ministry of Road Transport and Highways
+            ‘A’</td>
+        <td> Central Engineering Service (Roads) Gr</td>
+    </tr>
+    <tr>
+        <td>Ministry of Communication, Deptt. of Telecommunication</td>
+        <td> Indian Radio Regulatory Service Group
+            ‘A” Indian Telecommunication Service
+            Group ‘A’,J.T.O. (G.C.S. Gr. ‘B’)</td>
+    </tr>
+   
+    <tr>
+        <td> Ministry of Defence, Deptt. of Defence Production,
+            Directorate General of Aeronautical Quality Assurance</td>
+        <td> Defence Aeronautical Quality</td>
+    </tr>
+
+
+
+
+    <tr>
+        <td> Assurance Service(DAQAS)Gr ‘A’
+            Ministry of Science and Technology,
+            Deptt. of Science and Technology
+            Geological Survey of India
+            Border Roads Organisation
+            Indian Navy</td>
+        <td>  Survey of India Gr ‘A’ Service
+            Assistant Executive Engineer Gr ‘A’
+            BRES Gr. ‘A’
+            Indian Naval Armament Service, Asstt.
+            Naval Store Officer Grade-I
+            Indian Defence Service of Engineers</td>
+    </tr>
+
+
+
+
+    <tr>
+        <td>Military Engineer Services</td>
+        <td> Military Engineer Service (MES)
+            Surveyor Cadre
+           </td>
+    </tr>
+    <tr>
+        <td>Ministry of Jal Shakti, Deptt. of Water Resources, River Development & Ganga Rejuvenation,
+            Central Water Commission</td>
+        <td> Central Water Engineering Group-A
+            Service.</td>
+    </tr>
+    <tr>
+        <td>Central Electricity Authority</td>
+        <td>CPES Gr ‘A’ & CPESGr‘B’.</td>
+    </tr>
+    <tr>
+        <td>Ministry of Skill Development & Entrepreneurship</td>
+        <td> Indian Skill Development Service</td>
+    </tr>
+</table>
+
+<h4>The upper age-limit prescribed above will be further relaxable:</h4>
+<ul>
+    <li>Up to a maximum of five years if a candidate belongs to a scheduled caste or a scheduled tribe.</li>
+    <li>Up to a maximum of three years in case if the candidate belongs to the OBC category.</li>
+    <li>Up to a maximum of three years in case of defence service personnel disabled in operations during hostilities with any foreign country or in a disturbed area, and released as a consequence thereof.</li>
+    <li>Up to a maximum of five years in case of ex-servicemen including Commissioned Officers and ECOs/SSCOs who have rendered at least five years Military Service as on 1st January 2024, and have been released:
+        
+            <li>On completion of assignment (including those whose assignment is due) to be completed within one year from 1st January 2024, otherwise than by way of dismissal or discharge on account of misconduct or inefficiency, or</li>
+            <li>On account of physical disability attributable to Military Service or</li>
+            <li>On invalidment.</li>
+        
+    </li>
+    <li>Up to a maximum of five years in the case of ECOs/SSCOs who have completed an initial period of assignment of five years of Military Services as on 1st January 2024, and whose assignment has been extended beyond five years and in whose case the Ministry of Defence issues a certificate that they can apply for civil employment and they will be released on three months notice on selection from the date of receipt of the offer of appointment.</li>
+    <li>Up to a maximum of 10 years in the case of candidates of PwBD (Low vision Locomotor Disability including Cerebral Palsy, Leprosy cured, Dwarfism, Acid Attack victims & Muscular Dystrophy and Hard of Hearing).</li>
+    <li>A candidate of ESE-2024 will be eligible to get the benefit of economically weaker Section reservation only in case the candidate meets the criteria issued by the Central Government and is in possession of requisite Income & Asset Certificate based on the income of the financial year 2022-2023 and issued on/after 01.04.2023 (after the completion of FY 2022-23) but not later than the closing date of the application for Engineering Services (Preliminary) Examination-2024 i.e. 26 September 2023.</li>
+    <li>The OBC candidates applying for ESE- 2024 must produce OBC (Non-Creamy Layer) certificate based on the Income for the Financial Year (FY) 2022-2023, 2021-2022 and 2020-2021 and issued on/after 01.04.2023 (after the completion of FY 2022-23) but not later than the closing date of the application for Engineering Services (Preliminary) Examination-2024 i.e., 26th September 2023.</li>
+</ul>
+
+<h4> Minimum Educational Qualifications:</h4>
+<p> For admission to the examination, a candidate must have -</p>
+<p>Obtained a degree in Engineering from a university incorporated by an act of the central or state
+    legislature in India or other educational institutions established by an act of Parliament or declared to
+    be deemed as universities under section-3 of the University Grants Commission act, 1956 or
+    Passed Section A and B of the Institution Examinations of the Institution of Engineers (India) or
+    Obtained a degree/diploma in Engineering from foreign University/College/Institution and under such
+    conditions as may be recognized by the Government for the purpose from time to time or
+    Passed Graduate Membership Examination of the Institute of Electronics and Telecommunication
+    Engineers (India) or Passed Associate Membership Examination Parts II and III/Sections A and B of
+    the Aeronautical Society of India or Passed Graduate Membership Examination of the Institution of
+    Electronics and Radio Engineers, London held after November 1959 Provided that a candidate for the
+    post of Indian Naval Armament Service (Electronics Engineering Posts and Engineer Group 'A' in
+    Wireless Planning and Coordination Wing/Monitoring Organization) may possess any of the above
+    qualifications or the qualification mentioned below namely:</p>
+    <p>For Indian Naval Armament Service (Electronics Engg. Posts)- M.Sc. degree or its equivalent with
+        Wireless Communication Electronics, Radio Physics or Radio Engineering as a special subject.</p>
+        <p>For Indian Radio Regulatory Service– M.Sc. degree or its equivalent with Wireless Communication
+            Electronics, Radio Physics or Radio Engineering as a subject or Master’s Degree in Science with
+            Physics and Radio Communication or Electronics or Telecommunication as a special subject.</p>
+     <p> IES Officer’s Salary Indian Engineering Officers join as Assistant Executive Engineers or Assistant
+        Directors at the level of Junior Time Scale with a basic salary of Rs. 56,100/- per month and net salary
+        of around Rs. 85,000/- per month.(As per 7th Pay Commission)</p>   
+        <table class="mb-4">
+            <tr>
+                <th>Level</th>
+                <th>PayScale</th>
+                <th>Time Frame</th>
+            </tr>
+            <tr>
+                <td>Junior Time Scale (JTS)</td>
+                <td>INR 56100-177500</td>
+                <td>On Joining</td>
+            </tr>
+            <tr>
+                <td>Senior Time Scale (STS)</td>
+                <td>INR 67700-208700</td>
+                <td>3-5 years</td>
+            </tr>
+            <tr>
+                <td>Junior Administrative Grade (JAG)</td>
+                <td>INR 123100-215900</td>
+                <td>10-15 years</td>
+            </tr>
+            <tr>
+                <td>Senior Administrative Grade (SAG)</td>
+                <td>INR 144200-218200</td>
+                <td>15-20 years</td>
+            </tr>
+            <tr>
+                <td>Higher Administrative Grade (HAG)</td>
+                <td>INR 182200-224100</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>HAG+</td>
+                <td>INR 205400-224400</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Apex Scale</td>
+                <td>INR 225000</td>
+                <td></td>
+            </tr>
+        </table>
+        <h5>Indian Engineering Service Officers are among the top recipients of a good deal of privileges and
+            allowances.</h5>
+            <h4> ESE 2024 Exam Pattern</h4>
+            <h5> Stage-I: Preliminary Examination (Objective Papers)</h5>
+            <table id="table1">
+                <tr>
+                    <th>STAGE</th>
+                    <th>PAPER TYPE</th>
+                    <th>DURATION</th>
+                    <th>MARKS</th>
+                </tr>
+                <tr>
+                    <td>STAGE-I</td>
+                    <td>PAPER-I</td>
+                    <td>GENERAL STUDIES AND ENGINEERING APTITUDE</td>
+                    <td>2 HOURS</td>
+                    <td>300</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>PAPER-II</td>
+                    <td>ENGINEERING DISCIPLINE (CE/ME/EE/E&T)</td>
+                    <td>3 HOURS</td>
+                    <td>500</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>TOTAL MARKS</td>
+                    <td></td>
+                    <td></td>
+                    <td>800</td>
+                </tr>
+            </table>
+            <p> Minimum Qualifying Marks for each Paper will be at the discretion of the commission.
+                Only those candidates qualifying at this Stage are permitted to appear for Stage– II examination.</p>
+
+                <h5> Stage-II: Main Examination (Conventional Papers)</h5>
+                <table id="table2">
+                    <tr>
+                        <th>STAGE</th>
+                        <th>PAPER TYPE</th>
+                        <th>DURATION</th>
+                        <th>MARKS</th>
+                    </tr>
+                    <tr>
+                        <td>STAGE-II</td>
+                        <td>PAPER-I</td>
+                        <td>ENGINEERING DISCIPLINE (CE/ME/EE/E&T)</td>
+                        <td>3 HOURS</td>
+                        <td>300</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>PAPER-II</td>
+                        <td>ENGINEERING DISCIPLINE (CE/ME/EE/E&T)</td>
+                        <td>3 HOURS</td>
+                        <td>300</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>TOTAL MARKS (MAIN)</td>
+                        <td></td>
+                        <td></td>
+                        <td>600</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>TOTAL MARKS (MAINS+PRELIM)</td>
+                        <td></td>
+                        <td></td>
+                        <td>1100</td>
+                    </tr>
+                </table>
+            
+                <p> Only those candidates qualifying at this stage (i.e. Stage– I + Stage– II) are selected for Stage– III
+                    which is the Personality Test (Interview).</p>
+                    <h5> Stage-III: Personality Test</h5>
+                    <table>
+                        <tr>
+                            <th>STAGE</th>
+                            <th>MARKS</th>
+                        </tr>
+                        <tr>
+                            <td>STAGE-III</td>
+                            <td>Personality Test: 200</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>STAGE-I + STAGE-II + STAGE-III: 1300</td>
+                        </tr>
+                    </table>
+                
+                    <p class="mb-3"> The Candidates who have qualified all stages (Stage I + Stage II + Stage III) ,will be included in the
+                        final list of ESE(Engineering Services Exam)</p>
+            </div>
+
+  <style>
+
+    p a {
+      text-decoration: none;
+    }
+
+    body {
+      overflow-x: hidden;
+    }
+
+  </style>
+
+
+   <!-------------- modal start----------------->
+
+<button type="button" id="btn-enquiry"  style="background-color: #1a237e;box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);color:white;" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">QUICK ENQUIRY <i class="fas fa-arrow-up"></i></button>
+
+<div class="modal fade btn-enquiry" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-end">
+    <div class="modal-content" style="background-color: #1d6792;z-index: 999999999;">
+      
+      <div class="modal-header">
+        <h1 class="modal-title fs-4 text-white" id="exampleModalLabel">REGISTRATION</h1>
+        <button type="button" class="btn-close text-white bg-light" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      
+      <div class="modal-body">
+        <form>
+          
+          <div class="mb-3">
+            <!-- <label for="recipient-name" class="col-form-label">Name</label> -->
+            <input type="text" class="form-control border-0  border-2  rounded-0" id="recipient-name" placeholder="Name" required>
+          </div>
+          <div class="mb-3">
+            <!-- <label for="recipient-email" class="col-form-label">Email</label> -->
+            <input type="email" class="form-control border-0  border-2  rounded-0" id="recipient-email" placeholder="Email" required>
+          </div>
+
+          <div class="mb-3">
+            <!-- <label for="recipient-phone" class="col-form-label">Phone</label> -->
+            <input type="tel" class="form-control border-0  border-2  rounded-0" id="recipient-phone" placeholder="Phone No" required>
+          </div>
+
+          <div class="mb-3">
+            <!-- <label for="recipient-phone" class="col-form-label">Select one option</label> -->
+            <select class="form-select border-0  border-2  rounded-0" aria-label="Default select example" required>
+              <option selected class="text-white" >Select one option</option>
+              <option class="text-black">Google</option>
+              <option class="text-black">Social Media</option>
+              <option class="text-black">TV</option>
+              <option class="text-black">Radio</option>
+              <option class="text-black">Friend and Family</option>
+            </select>
+          </div>
+
+          <div class="mb-3">
+            <!-- <label for="message-text" class="col-form-label">Message:</label> -->
+            <textarea class="form-control border-0  border-2 rounded-0" id="message-text" placeholder="message"></textarea>
+          </div>
+
+        </form>
+      </div>
+        <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+        <button type="submit" class="btn  w-25 mb-3 text-center text-white" style="margin: 0 auto;background-color: #1a237e;">Submit</button>
+    </div>
+  </div>
+</div>
+<!-------------- modal end ---------------->
+
+<div class="add-button p-2">
+  <a href="https://wa.me/8273373357">
+      <img src="img/whatsapp.png" alt="whatsapp" style="color: #1eac02; width: 60%;">
+  </a>
+</div>
+
+
+
+  <footer class="text-center text-lg-start bg-dark py-3 text-white">
+    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+      <div class="me-lg-5 mb-4">
+        <span>Get connected with us on social networks:</span>
+      </div>
+
+      <div>
+        <a href="https://www.facebook.com/ranaankit.dehradun/" class="me-4 text-reset">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="#" class="me-4 text-reset">
+          <i class="fab fa-twitter"></i>
+        </a>
+        
+        <a href="#" class="me-4 text-reset">
+          <i class="fab fa-instagram"></i>
+        </a>
+       
+      </div>
+    </section>
+
+    <section class="container-fluid text-center text-md-start mt-5">
+      <div class="row mt-3">
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <h4 class="text-uppercase fw-bold mb-4">DRONACHARYA</h4>
+          <p>
+            DRONACHARYA is one of the leading coaching institutes committed to
+            providing premium quality education to the students who are
+            willing to appear in any competitive exams
+          </p>
+        </div>
+
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <h6 class="text-uppercase fw-bold mb-4">Featured Links</h6>
+          <p><a href="index.html" class="text-reset">Home</a></p>
+          <p><a href="about-us.html" class="text-reset">About</a></p>
+          <p><a href="courses.html" class="text-reset">Courses</a></p>
+          <p><a href="contact.html" class="text-reset">Contact</a></p>
+        </div>
+
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <h6 class="text-uppercase fw-bold mb-4">COACHING</h6>
+          <p><a href="gate.html" class="text-reset">GATE</a></p>
+          <p><a href="defence.html" class="text-reset">DEFENCE</a></p>
+          <p><a href="#" class="text-reset">PSU </a></p>
+          <p><a href="ssc-je.html" class="text-reset">SSC JE</a></p>
+        </div>
+
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4" id="footer-add">
+          <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+          <p class="mb-1">
+            <i class="fas fa-home me-3"></i><a href="https://maps.app.goo.gl/4wfXp9JYuqv8EDC68">Ojaswi Complex – Top
+              Floor, General Mahadev Singh Rd, Ballupur
+              Chowk, Ballupur, Dehradun, Uttarakhand 248001</a>
+          </p>
+          <p class="mb-1">
+            <i class="fas fa-phone me-2"></i><a href="tel:9412611114">9412611114</a>
+          </p>
+          <p class="mb-1">
+            <i class="fas fa-phone me-2"></i><a href="tel:8273373357">8273373357</a>
+          </p>
+        </div>
+      </div>
+    </section>
+  </footer>
+
+  <div class="text-center p-2" style="background-color:#1a237e;color:white;">
+    © 2023 Copyright:
+    <a class="text-reset fw-bold" href="https://www.vervegen.com" style="text-decoration: none;">
+      Vervegen Tech Pvt Ltd</a>
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+    integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"></script>
+
+  <!-- DataTables JavaScript -->
+  <script type="text/javascript" charset="utf8"
+    src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.js"></script>
+
+  <!-- <script src="css/bootstrap.js"></script>
+     -->
+  <script>
+    $(document).ready(function () {
+      $('#example').DataTable({
+        "paging": true,
+        "pageLength": 10, // You can adjust the number of rows per page
+        "lengthMenu": [10, 25, 50, 100], // Options for rows per page dropdown
+        "info": true, // Display information about the table
+        "responsive": true, // Enable responsive design
+      });
+    });
+  </script>
+</body>
+
+</html>

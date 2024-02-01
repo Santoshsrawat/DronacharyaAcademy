@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dronacharya Academy</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.datatables.net/1.10.25/css/jquery.dataTables.css"
+    />
+
+    <style>
+      td a {
+        text-decoration: none;
+        color: black;
+        font-weight: 600;
+        font-size: 20px;
+      }
+    </style>
+    <style>
+      .has-megamenu li a {
+        text-decoration: none;
+        color: black;
+        list-style: circle;
+      }
+
+      @media (min-width: 900px) and (max-width: 1400px) {
+        .megamenu {
+          width: 50% !important;
+          /* margin: 0 30px !important;  */
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav class="navbar bg-body-tertiary d-flex">
+      <div class="container-fluid mx-lg-5 mx-md-2 mx-sm-1">
+        <a
+          class="navbar-brand"
+          href="#"
+          data-aos="fade-right"
+          data-aos-duration="2000"
+        >
+          <img
+            src="./img/cropped-logo-removebg-preview.png"
+            alt="Logo"
+            width="40"
+            height="30"
+            class="d-inline-block align-text-top"
+          />
+          Dronacharya Academy
+        </a>
+        <div class="add" data-aos="fade-right" data-aos-duration="2000">
+          <ul
+            class="d-flex justify-content-end"
+            style="list-style: none"
+            id="list-add"
+          >
+            <li class="me-4">
+              <i class="fas fa-user-graduate fa-lg"></i>
+              <a
+                href="registration.html"
+                style="text-decoration: none; color: black"
+                >Online Admission</a
+              >
+            </li>
+            <li class="me-4">
+              <i class="fas fa-book fa-lg"></i>
+              <a href="career.html" style="text-decoration: none; color: black"
+                >Careers</a
+              >
+            </li>
+            <li class="">
+              <i class="fas fa-user fa-lg"></i>
+              <a href="contact.html" style="text-decoration: none; color: black"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <nav
+      class="navbar navbar-expand-lg navbar-dark"
+      style="background-color: #1a237e"
+    >
+      <div class="container-fluid">
+        <!-- <a class="navbar-brand" href="#">Brand</a> -->
+        <button
+          class="navbar-toggler ms-auto"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#main_nav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="main_nav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link text-white" href="index.html">HOME</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle text-white"
+                href="#"
+                data-bs-toggle="dropdown"
+                >GATE
+              </a>
+              <ul class="dropdown-menu dropdown-menu-end">
+                <li>
+                  <a class="dropdown-item" href="list-of-iits.html"
+                    >Lists of IITS</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="list-of-iiits.html"
+                    >Lists of IIITS</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="list-of-nits.html"
+                    >Lists of NITS</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="gateexamsyllabs.html">
+                    GATE EXAM Syllabus
+                  </a>
+                </li>
+                <!-- <li><a class="dropdown-item" href="#"> Submenu item 2 </a></li> -->
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown has-megamenu">
+              <a
+                class="nav-link dropdown-toggle text-white"
+                href="#"
+                data-bs-toggle="dropdown"
+                >COURSES</a
+              >
+              <div class="dropdown-menu megamenu" role="menu">
+                <div class="row">
+                  <div class="col-lg-6 col-6">
+                    <div class="col-megamenu">
+                      <h5 class="title fw-bold text-center">
+                        CLASSROOM COURSES
+                      </h5>
+                      <ul class="list-style">
+                        <li>
+                          <a href="gate+ese1yearfoundationbatch.html"
+                            >GATE + ESE 1 YEAR FOUNDATION BATCH</a
+                          >
+                        </li>
+                        <li>
+                          <a href="gate-exclusive-1-year-foundation-course.html"
+                            >GATE EXCLUSIVE 1 YEAR FOUNDATION COURSE</a
+                          >
+                        </li>
+                        <!-- <li><a href="#">Custom Menu</a></li>
+                        <li><a href="#">Custom Menu</a></li>
+                        <li><a href="#">Custom Menu</a></li>
+                        <li><a href="#">Custom Menu</a></li> -->
+                      </ul>
+                    </div>
+                    <!-- col-megamenu.// -->
+                  </div>
+                  <!-- end col-3 -->
+                  <div class="col-lg-6 col-6">
+                    <div class="col-megamenu">
+                      <h5 class="title fw-bold">POSTAL BOOKS PACKAGE</h5>
+                      <ul class="list-style">
+                        <li><a href="gate.html">GATE</a></li>
+                        <li><a href="#">CSE</a></li>
+                        <li><a href="ese.html">ESE</a></li>
+                        <li><a href="#">UPPSCE</a></li>
+                        <li><a href="#">MPSC</a></li>
+                        <li><a href="#">OPSC</a></li>
+                        <li><a href="#">BPSC</a></li>
+                        <li><a href="#">RSSB-JE</a></li>
+                        <li><a href="ssc-je.html">SSC-JE</a></li>
+                        <li><a href="#">GS FOR STATE EXAM</a></li>
+                      </ul>
+                    </div>
+                    <!-- col-megamenu.// -->
+                  </div>
+                  <!-- end col-3 -->
+                  <!-- <div class="col-lg-3 col-6">
+                      <div class="col-megamenu">
+                        <h6 class="title">Title Menu Three</h6>
+                        <ul class="list-unstyled">
+                          <li><a href="#">Custom Menu</a></li>
+                          <li><a href="#">Custom Menu</a></li>
+                          <li><a href="#">Custom Menu</a></li>
+                          <li><a href="#">Custom Menu</a></li>
+                          <li><a href="#">Custom Menu</a></li>
+                          <li><a href="#">Custom Menu</a></li>
+                        </ul>
+                      </div> 
+                    </div>     -->
+                  <!-- <div class="col-lg-3 col-6">
+                      <div class="col-megamenu">
+                        <h6 class="title">Title Menu Four</h6>
+                        <ul class="list-unstyled">
+                          <li><a href="#">Custom Menu</a></li>
+                          <li><a href="#">Custom Menu</a></li>
+                          <li><a href="#">Custom Menu</a></li>
+                          <li><a href="#">Custom Menu</a></li>
+                          <li><a href="#">Custom Menu</a></li>
+                          <li><a href="#">Custom Menu</a></li>
+                        </ul>
+                      </div> 
+                    </div> -->
+                </div>
+                <!-- end row -->
+              </div>
+              <!-- dropdown-mega-menu.// -->
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link text-white" href="ssc-je.html"> SSC JE</a>
+            </li> -->
+            <!-- <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-white" href="#" data-bs-toggle="dropdown">COURSES
+              </a>
+              <ul class="dropdown-menu dropdown-menu-end">
+                <li>
+                  <a class="dropdown-item" href="gate.html">GATE</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="">ESE</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="">CSE</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="">UPPSCE</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="">MPSC</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="">OPSC</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="">BPSC</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="">RSSB-JE</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="ssc-je.html">SSC-JE</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="">GS FOR STATE EXAM</a>
+                </li>
+                <li><a class="dropdown-item" href="#"> Submenu item 2 </a></li>
+              </ul>
+            </li> -->
+            <li class="nav-item">
+              <a class="nav-link text-white" href="FeeStructure.html"
+                >FEE STRUCTURE</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="our-result.html"
+                >OUR RESULT</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle text-white"
+                href="#"
+                data-bs-toggle="dropdown"
+                >ABOUT US
+              </a>
+              <ul class="dropdown-menu dropdown-menu-end">
+                <li>
+                  <a class="dropdown-item" href="whychoseus.html"
+                    >WHY DRONACHARYA ACADEMY</a
+                  >
+                </li>
+                <!-- <li><a class="dropdown-item" href="#"> Submenu item 2 </a></li> -->
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="study-material.html"
+                >STUDY MATERIAL</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle text-white"
+                href="#"
+                data-bs-toggle="dropdown"
+                >DEFENCE
+              </a>
+              <ul class="dropdown-menu dropdown-menu-end">
+                <li>
+                  <a class="dropdown-item" href="nda.html">NDA</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="cds.html">CDS</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="">X-GROUP</a>
+                </li>
+                <!-- <li><a class="dropdown-item" href="#"> Submenu item 2 </a></li> -->
+              </ul>
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link text-white" href="nda.html">NDA</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="cds.html">CDS</a>
+            </li> -->
+            <li class="nav-item">
+              <a class="nav-link text-white" href="test-ser.html"
+                >TEST SERIES</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <h1 class="text-center mt-5 mb-5">NON-TECHNICAL</h1>
+
+    <div class="container mb-4">
+      <!-- <div class="mb-3 text-end">
+        <button class="btn " style="background-color: #1a237e;color: white;">NON-TECHNICAL</button>
+        <button class="btn " style="background-color: #1a237e;color: white;">TECHNICAL</button>
+    </div> -->
+      <table class="table table-light border border-3 border-dark">
+        <!-- <thead class="text-center">
+          <tr>
+            <th scope="col" class="fs-3">Test</th>
+            <th scope="col" class="fs-3">Download</th>
+           
+          </tr>
+        </thead> -->
+        <tbody class="text-center">
+          <tr>
+            <td><a href="">APTITUDE</a></td>
+            <td>
+              <a href="./STUDY MATERIAL/test-ssc-1.pdf" target="_blank">
+                <button class="btn btn-success">
+                  View <i class="fa-solid fa-eye"></i>
+                </button>
+              </a>
+              <a
+                href="./STUDY MATERIAL/test-ssc-1.pdf"
+                download="test-ssc-1.pd"
+              >
+                <button class="btn btn-primary">
+                  Download <i class="fa-solid fa-download"></i>
+                </button>
+              </a>
+            </td>
+          </tr>
+
+          <tr>
+            <td><a href="">SSC CHSL</a></td>
+            <td>
+              <a href="./STUDY MATERIAL/ssccchhl.pdf" target="_blank">
+                <button class="btn btn-success">
+                  View <i class="fa-solid fa-eye"></i>
+                </button>
+              </a>
+              <a href="./STUDY MATERIAL/ssccchhl.pdf" download="ssccchhl.pdf">
+                <button class="btn btn-primary">
+                  Download <i class="fa-solid fa-download"></i>
+                </button>
+              </a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <style>
+      p a {
+        text-decoration: none;
+      }
+
+      body {
+        overflow-x: hidden;
+      }
+    </style>
+
+    <footer class="text-center text-lg-start bg-dark py-3 text-white">
+      <section
+        class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
+      >
+        <div class="me-lg-5 mb-4">
+          <span>Get connected with us on social networks:</span>
+        </div>
+
+        <div>
+          <a
+            href="https://www.facebook.com/ranaankit.dehradun/"
+            class="me-4 text-reset"
+          >
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="#" class="me-4 text-reset">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <!-- <a href="#" class="me-4 text-reset">
+          <i class="fab fa-google"></i>
+        </a> -->
+          <a href="#" class="me-4 text-reset">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <!-- <a href="#" class="me-4 text-reset">
+          <i class="fab fa-linkedin"></i>
+        </a> -->
+          <!-- <a href="#" class="me-4 text-reset">
+          <i class="fab fa-github"></i>
+        </a> -->
+        </div>
+      </section>
+
+      <section class="container-fluid text-center text-md-start mt-5">
+        <div class="row mt-3">
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <h4 class="text-uppercase fw-bold mb-4">DRONACHARYA</h4>
+            <p>
+              DRONACHARYA is one of the leading coaching institutes committed to
+              providing premium quality education to the students who are
+              willing to appear in any competitive exams
+            </p>
+          </div>
+
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <h6 class="text-uppercase fw-bold mb-4">Featured Links</h6>
+            <p><a href="index.html" class="text-reset">Home</a></p>
+            <p><a href="about-us.html" class="text-reset">About</a></p>
+            <p><a href="courses.html" class="text-reset">Courses</a></p>
+            <p><a href="contact.html" class="text-reset">Contact</a></p>
+          </div>
+
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <h6 class="text-uppercase fw-bold mb-4">COACHING</h6>
+            <p><a href="gate.html" class="text-reset">GATE</a></p>
+            <p><a href="defence.html" class="text-reset">DEFENCE</a></p>
+            <p><a href="#" class="text-reset">PSU </a></p>
+            <p><a href="ssc-je.html" class="text-reset">SSC JE</a></p>
+          </div>
+
+          <div
+            class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4"
+            id="footer-add"
+          >
+            <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+            <p class="mb-1">
+              <i class="fas fa-home me-3"></i
+              ><a href="https://maps.app.goo.gl/4wfXp9JYuqv8EDC68"
+                >Ojaswi Complex – Top Floor, General Mahadev Singh Rd, Ballupur
+                Chowk, Ballupur, Dehradun, Uttarakhand 248001</a
+              >
+            </p>
+            <p class="mb-1">
+              <i class="fas fa-phone me-2"></i
+              ><a href="tel:9412611114">9412611114</a>
+            </p>
+            <p class="mb-1">
+              <i class="fas fa-phone me-2"></i
+              ><a href="tel:8273373357">8273373357</a>
+            </p>
+          </div>
+        </div>
+      </section>
+    </footer>
+    <div
+      class="text-center p-2"
+      style="background-color: #1a237e; color: white"
+    >
+      © 2023 Copyright:
+      <a
+        class="text-reset fw-bold"
+        href="https://www.vervegen.com"
+        style="text-decoration: none"
+      >
+        Vervegen Tech Pvt Ltd</a
+      >
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+      integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"></script>
+
+    <!-- DataTables JavaScript -->
+    <script
+      type="text/javascript"
+      charset="utf8"
+      src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.js"
+    ></script>
+
+    <!-- <script src="css/bootstrap.js"></script>
+     -->
+    <script>
+      $(document).ready(function () {
+        $("#example").DataTable({
+          paging: true,
+          pageLength: 10, // You can adjust the number of rows per page
+          lengthMenu: [10, 25, 50, 100], // Options for rows per page dropdown
+          info: true, // Display information about the table
+          responsive: true // Enable responsive design
+        });
+      });
+    </script>
+  </body>
+</html>

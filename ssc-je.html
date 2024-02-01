@@ -1,0 +1,897 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dronacharya Academy</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.25/css/jquery.dataTables.css">
+
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <style>
+      
+          @media (max-width:1366px) and (min-width:992px) {
+              #card-add {
+                  height: 420px;
+              }
+          }
+
+          td{
+            font-size: 15px;
+          }
+
+
+          table-container {
+            max-height: 500px;
+            border: 2px solid #ddd;
+            overflow-x: auto;
+        }
+
+        .table-container td {
+            font-size: .8rem;
+        }
+
+        /* Add media query for screens with a maximum width of 700px */
+        @media (max-width: 700px) {
+            .table-container {
+                overflow-x: scroll;
+            }
+        }
+
+          
+
+  </style>
+<style>
+  .has-megamenu li a{
+       text-decoration: none;
+      color:black;
+      list-style: circle; 
+    }
+
+    @media (min-width:900px) and (max-width:1400px){
+    .megamenu{
+      width:50% !important; 
+      /* margin: 0 30px !important;  */
+    }
+  }
+  </style>
+
+</head>
+
+<body>
+
+  <nav class="navbar bg-body-tertiary d-flex">
+    <div class="container-fluid mx-lg-5 mx-md-2 mx-sm-1">
+      <a class="navbar-brand" href="#" data-aos="fade-right" data-aos-duration="2000">
+        <img src="./img/cropped-logo-removebg-preview.png" alt="Logo" width="40" height="30"
+          class="d-inline-block align-text-top" />
+        Dronacharya Academy
+      </a>
+      <div class="add" data-aos="fade-right" data-aos-duration="2000">
+        <ul class="d-flex justify-content-end" style="list-style: none; " id="list-add">
+          <li class="me-4">
+            <i class="fas fa-user-graduate fa-lg"></i> <a href="registration.html" style="
+              text-decoration: none;
+              color:black;
+            ">Online Admission</a>
+          </li>
+          <li class="me-4"><i class="fas fa-book fa-lg"></i> <a href="career.html" style="
+            text-decoration: none;
+            color:black;
+          ">Careers</a></li>
+          <li class=""><i class="fas fa-user fa-lg"></i> <a href="contact.html" style="
+              text-decoration: none;
+              color:black;
+            ">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #1a237e">
+    <div class="container-fluid">
+      <!-- <a class="navbar-brand" href="#">Brand</a> -->
+      <button class="navbar-toggler ms-auto text-white" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-center" id="main_nav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link text-white" href="index.html">HOME</a>
+          </li>
+        
+          
+          <li class="nav-item">
+            <a class="nav-link text-white" href="ese.html">ESE</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-white" href="#" data-bs-toggle="dropdown">GATE
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li>
+                <a class="dropdown-item" href="gate.html">About Gate</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="list-of-iits.html">Lists of IITS</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="list-of-iiits.html">Lists of IIITS</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="list-of-nits.html">Lists of NITS</a>
+              </li>
+               <li><a class="dropdown-item" href="gateexamsyllabs.html"> GATE EXAM Syllabus </a></li> 
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link text-white" href="ssc-je.html">SSC JE</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-white" href="#" data-bs-toggle="dropdown">COURSES
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li>
+                <a class="dropdown-item" href="">ESE + GATE : 1 Year Foundation Course</a>
+                <ul>
+                  <li>
+                    <a href="ESE+GATE1YearFoundationCourse.html" class="text-primary" style="text-decoration: none;">Regular</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a class="dropdown-item" href="">GATE : 1 Year Foundation Course</a>
+                <ul>
+                  <li>
+                    <a href="GATE1YearFoundationCourse.html" class="text-primary" style="text-decoration: none;">Regular</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a class="dropdown-item" href=""> SSC-JE / STATE-JE Course</a>
+                <ul>
+                  <li>
+                    <a href="STATE-JECourse.html" class="text-primary" style="text-decoration: none;">Regular</a>
+                  </li>
+                </ul>
+              </li>
+              
+             
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link text-white" href="batches.html">NEW BATCHES</a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link text-white" href="FeeStructure.html">FEE STRUCTURE</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="our-result.html">OUR RESULT</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-white" href="#" data-bs-toggle="dropdown">ABOUT US
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li>
+                <a class="dropdown-item" href="whychoseus.html">WHY DRONACHARYA ACADEMY</a>
+              </li>
+             
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="study-material.html">STUDY MATERIAL</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-white" href="#" data-bs-toggle="dropdown">DEFENCE
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li>
+                <a class="dropdown-item" href="nda.html">NDA</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="cds.html">CDS</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="afcat.html">AFCAT</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="agniveer.html">AGNIVEER</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="ssb.html">SSB</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="aboutRIMC.html">RIMC</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="mns.html"> MNS</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="sainik.html"> SAINIK SCHOOL</a>
+              </li>
+             
+            </ul>
+          </li>
+         
+          <li class="nav-item">
+            <a class="nav-link text-white" href="https://vervegenlms.com/">TEST SERIES</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+
+   <!-- content here  -->
+   <div class="container">
+    <div class="container">
+      <h1 class="text-center py-5 fs-2 fw-bold">SSC JE</h1>
+      <p class="text-start fs-6">
+        The SSC JE exam is one of the most challenging, yet
+        opportunities-creating government exams in India. The exam conducting
+        committee is Staff Selection Commission (SSC).
+      </p>
+      <p class="text-start fs-6 mt-lg-3">
+        The engineering branches that are eligible for the SSC exam include
+        Civil Engineering, Mechanical Engineering, Electrical Engineering, and
+        Quality Survey and Contracts. Therefore, engineers belonging to these
+        engineering disciplines can utilize the opportunities that this
+        particular exam provides to deserving candidates.
+      </p>
+      <h1 class="text-center py-5 fs-2 fw-bold">
+        list of the SSC JE posts and respective departments
+      </h1>
+    </div>
+
+   
+
+    <div class="table-container p-3 border-danger">
+
+   <table id="example" class="table table-striped table-bordered table-responsive" style="width:100%">
+      <thead>
+          <tr class="mt-5">
+              <th>S.NO</th>
+              <th>SSC JE Posts</th>
+              <th>Departments Recruiting</th>
+              
+          </tr>
+      </thead>
+
+      <tbody>
+          <tr>
+              <td>1</td>
+              <td>Junior Engineer (Civil branch)</td>
+              <td class="bg-dark-subtle">
+                Border Roads Organisation (BRO) <br />
+                Central Public Works Department (CPWD) <br />
+                Central Water and Power Research Station <br />
+                Central Water Commission <br />
+                Farakka Barage Project (FBP) <br />
+                Military Engineer Services (MES) <br />
+                National Technical Research Organisation (NTRO) <br />
+                Ministry of Ports, Shipping, and Waterways (Andaman Lakshadweep Harbour of Works)
+            </td>
+          </tr>
+
+          <tr>
+              <td>2</td>
+              <td>Junior Engineer (Mechanical engineering branch)</td>
+              <td>
+                Central Water and Power Research Station <br />
+                Central Water Commission <br />
+                Directorate of Quality Assurance (Naval) <br />
+                Farakka Barage Project (FBP) <br />
+                National Technical Research Organization (NTRO) <br />
+                Ministry of Ports, Shipping, and Waterways (Andaman Lakshadweep Harbour of Works)
+            </td>
+              
+          </tr>
+
+          <tr>
+              <td>3</td>
+              <td>Junior Engineer (Electrical engineering branch)</td>
+              <td class="bg-dark-subtle">
+                Central Public Works Department (CPWD) <br />
+                Central Water and Power Research Station <br />
+                Directorate of Quality Assurance (Naval) <br />
+                National Technical Research Organization (NTRO) <br />
+                Ministry of Ports, Shipping, and Waterways (Andaman Lakshadweep Harbour of Works)
+            </td>
+             
+          </tr>
+
+          <tr>
+              <td>4</td>
+              <td>Junior Engineer (Electrical and Mechanical engineering branch)</td>
+              <td>Military Engineer Services (MES)</td>
+             
+          </tr>
+
+         
+      </tbody>
+  </table>
+
+</div>
+
+
+
+
+<div class="custom-container">
+  <h1 class="text-center py-5 fs-2 fw-bold">EDUCATIONAL QUALIFICATION</h1>
+  <p class="text-center fs-6 mb-3">
+      The Staff Selection Commission has set certain criteria in terms of educational qualifications for the aspirants interested in applying for the Junior Engineer posts with the Staff Selection Commission (SSC). The specified educational qualification forms a crucial part of the SSC-JE eligibility criteria.
+  </p>
+  <div class="table-responsive">
+      <table id="qualificationTable" class="table table-striped table-hover align-middle caption-top bg-dark-subtle text-center fs-4">
+        <thead>
+        <tr>
+          <td class="fw-bold">Post</td>
+          <td class="fw-bold">Educational and Other Qualification</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="bg-danger-subtle">
+            Junior Engineer (Civil), Border Roads Organisation Ministry of
+            Defence
+          </td>
+          <td class="bg-danger-subtle">
+            Degree in Civil Engineering from a recognized University/Institute
+            <br />
+            OR <br />
+            1) Three years Diploma in Civil Engineering from a recognized
+            University/Institute/Board; and <br />
+            2) Two years of working experience in
+            Planning/Execution/Maintenance of Civil Engineering works.
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Junior Engineer (Electrical & Mechanical), Border Roads
+            Organisation, Ministry of Defence.
+          </td>
+          <td>
+            Degree in Electrical, or Mechanical Engineering from a recognized
+            University/Institute; <br />
+            OR <br />
+            1) Three years Diploma in Electrical/Mechanical/Automobile
+            Engineering from a recognized University/Institute/Board; and
+            <br />
+            2) Two years of experience in Planning/Execution/Maintenance of
+            Electrical or Mechanical Engineering works.
+          </td>
+        </tr>
+        <tr>
+          <td class="bg-danger-subtle">
+            Junior Engineer (Civil or Electrical) CPWD
+          </td>
+          <td class="bg-danger-subtle">
+            Diploma in Civil or Electrical Engineering from a recognized
+            university or institute.
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Junior Engineer (Civil, Mechanical & Electrical), Military
+            Engineer Services (MES).
+          </td>
+          <td>
+            Degree in Civil/ Mechanical & Electrical engineering <br />
+            OR <br />
+            1) Three years Diploma in Civil/ Mechanical & Electrical
+            Engineering from a recognized university or institute.
+            <br />2) Two years’ experience in the Planning, Execution, and
+            Maintenance of Electrical or Mechanical Engineering works.
+          </td>
+        </tr>
+        <tr>
+          <td class="bg-danger-subtle">
+            Junior Engineer (Civil, Electrical, or Mechanical engineering),
+            National Technical Research Organization.
+          </td>
+          <td class="bg-danger-subtle">
+            Diploma in Civil, Electrical or Mechanical Engineering from a
+            recognized university or institution.
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Junior Engineer (Civil, Electrical and Mechanical engineering
+            branch), Ministry of Ports, Shipping and Waterways (Andaman
+            Lakshadweep Harbour Works)
+          </td>
+          <td>
+            Diploma in Civil Engineering, Electrical Engineering, and
+            Mechanical Engineering from a recognized institution or
+            university.
+          </td>
+        </tr>
+        <tr>
+          <td class="bg-danger-subtle">
+            Junior Engineer (Civil, Electrical, or Mechanical engineering),
+            Central Water Power Research Station.
+          </td>
+          <td class="bg-danger-subtle">
+            Diploma in Civil, Electrical, or Mechanical engineering from a
+            recognized university or institute.
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Junior Engineer (Civil or Mechanical engineering), Central Water
+            Commission.
+          </td>
+          <td>
+            Degree or Diploma in Civil or Mechanical engineering from a
+            recognized university or institute.
+          </td>
+        </tr>
+        <tr>
+          <td class="bg-danger-subtle">
+            Junior Engineer (Mechanical or Electrical), Directorate of Quality
+            Assurance (Naval).
+          </td>
+          <td class="bg-danger-subtle">
+            Degree in Mechanical Engineering from a recognized institute;
+            <br />
+            OR <br />
+            1) Three years Diploma in Mechanical or Electrical Engineering
+            from a recognized University or Institution plus
+            <br />2) Two years’ experience in the respective field.
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Junior Engineer (Civil, Mechanical or Electrical), Farakka Barrage
+            Project.
+          </td>
+          <td>
+            Diploma in Civil, Mechanical, or Electrical Engineering from a
+            recognized University or Institute.
+          </td>
+        </tr>
+      </tbody>
+      </table>
+  </div>
+   </div>
+
+  
+
+    <div class="custom-container">
+      <h1 class="text-center py-5 fs-2 fw-bold">
+        <a href="" style="text-decoration: none;color:black;">SSC-JE Syllabus</a>
+      </h1>
+      <p class="text-start fs-6 text-dark">
+        <strong><a href="" class="fw-bold text-black fs-5">1. General Intelligence and Reasoning:</a></strong>
+        The SSC JE syllabus associated with General Reasoning will comprise
+        both verbal and non-verbal types. The test may include questions
+        associated with topics such as analogies, similarities, differences,
+        space visualization, problem-solving, analysis, judgement,
+        decision-making, visual memory, discrimination, observation, and
+        relationship concepts. The other topics include questions designed to
+        test the candidate’s abilities to deal with abstract ideas and symbols
+        and their relationships, arithmetical computations, and other
+        analytical functions.
+      </p>
+      <p class="text-start fs-6 text-dark">
+        <strong><a href="" class="fw-bold text-black fs-5">2. General Awareness:</a></strong> In this section,
+        the officials test the candidate’s general awareness about different
+        events happening around us. Along with this, officials also test the
+        application of the knowledge from time to time. The officials aim to
+        test the ability of the candidates in knowledge implementation across
+        different segments. These segments might have an association with the
+        regular duties of a Staff Selection Commission (SSC) Junior Engineer.
+        The topics that are commonly asked in this section relate to India and
+        neighbouring countries in terms of History, Geography, Economics,
+        General Polity, and Scientific Research, etc. Candidates must keep a
+        note that they will not require to possess any specific field
+        knowledge in this section of the <b>SSC-JE exam</b>.
+      </p>
+      <h1 class="text-center py-5 fs-3 text-dark fw-bold">
+        Now, let us dive into the General Engineering part of the SSC JE exam
+        for the 2024 session.
+      </h1>
+      <p class="text-start fs-5 text-dark">
+        <strong><a href="" class="fw-bold text-black fs-5">Part-A Civil Engineering:</a></strong> Building
+        materials, Estimating, Costing and Valuation, Surveying, Soil
+        Mechanics, Hydraulics, Irrigation Engineering, Transportation
+        Engineering, and Environmental Engineering. Structural Engineering
+        forms an important part of the <b>SSC-JE syllabus</b> for the Civil
+        <b>Engineering stream</b>. The topics that one must read in this
+        segment include the Theory of Structures, Concrete Technology, RCC
+        Design, and Steel Design.
+      </p>
+      <p class="text-start fs-5 text-dark">
+        <strong><a href="" class="fw-bold text-black fs-5"> Part-B (Electrical Engineering):</a></strong> In
+        this segment, the important topics present are basic concepts, AC
+        Fundamentals, Magnetic Circuits, Measurement and Measuring
+        instruments, Electrical Machines, Synchronous Machines, Fractional
+        Kilowatt Motors, and single phase induction Motors, Synchronous
+        Machines, Generation, Transmission and Distribution, Estimation and
+        Costing, Basic Electronics, and Utilization and Electrical Energy.
+      </p>
+      <p class="text-start fs-5 text-dark">
+        <strong><a href="" class="fw-bold text-black fs-5">Part C (Mechanical Engineering):</a></strong> The
+        next part of the mechanical engineering stream comprises the Theory of
+        Machines and Machine Design, Engineering Mechanics, and Strength of
+        Materials. The other topics present in this part are Properties of
+        Pure Substances, 1st and 2nd Laws of Thermodynamics, Air standard
+        cycles for IC Engines, IC Engine Performance, IC Engine Cooling and
+        Lubrication, Rankine cycle, Boilers, Classification, Specification,
+        Fitting and Accessories, and Air Compressors and their cycles,
+        Refrigeration cycles with Principle of Refrigeration Plant, and
+        Nozzles and Steam Turbines. Other topics present in the SSC-JE
+        syllabus include Basic Principles, Properties and Classification of
+        Fluids, Fluid Statics and Kinematics, Measurement of Fluid Pressure,
+        Dynamics of ideal fluids, Measurement of Flow rate, Hydraulic
+        Turbines, Centrifugal Pumps, and Classification of Steel.
+      </p>
+      <h1 class="text-center py-5 fs-3 text-dark fw-bold">
+        After discussing the Part-I part of the syllabus, let us find out the
+        relevant topics present in the Part-II of the SSC JE syllabus.
+      </h1>
+      <h2 class="text-start py-5 fs-4 text-dark fw-bold">
+        Part A (Civil and Structural Engineering)
+      </h2>
+      <p class="text-start fs-5 text-dark">
+        <strong><a href="" class="fw-bold text-black fs-5">Building Materials:</a></strong> Physical and
+        Chemical properties, classification, standard tests, uses, and
+        manufacture/quarrying of materials. The materials crucial in these
+        processes are building stones, cement (Portland), asbestos products,
+        wood and timber products, laminates, bituminous materials, varnishes,
+        and paints.
+      </p>
+      <p class="text-start fs-5 text-dark">
+        <strong><a href="" class="fw-bold text-black fs-5">Estimating, Costing, and Valuation:</a></strong>
+        Analysis of rates, Estimate, glossary of technical terms, methods and
+        unit of measurement, Brick work (Modular and Traditional Bricks), RCC
+        work, Shuttering, Timber work, Painting, Flooring, Plastering,
+        Boundary wall, Brick building. Along with this, other important topics
+        include Centre line method, Bar bending schedule, Septic tank,
+        Mid-section formula, Trapezoidal formula, Simpson’s rule, cost
+        estimate of septic tank, Flexible pavements, Tube well, and isolates
+        and combined footings, Valuation – Value and Cost, Scrap value,
+        Salvage and assessed value, sinking fund, depreciation, obsolescence,
+        and methods of valuation.
+      </p>
+      <p class="text-start fs-5 text-dark">
+        <strong><a href="" class="fw-bold text-black fs-5"> Surveying:</a></strong> This part forms a critical
+        part of the Civil and Structural Engineering niche. The topics present
+        in this segment of the <b>SSC-JE syllabus</b> include Principles of
+        surveying, measurement of distance, working of the prismatic compass,
+        compass traversing, chain surveying, local attraction, plane table
+        surveying, theodolite traversing and adjustment, Levelling,
+        Definitions of the words/terms used in levelling, contouring,
+        refraction, and curvature corrections. Other topics associated with
+        Civil and Structural Engineering in the <b>SSC-JE syllabus</b> include
+        temporary and permanent adjustments of dumpy level, methods of
+        contouring, use of contour map, tachometric survey, and curve setting,
+        earthwork calculation, and advanced surveying equipment.
+      </p>
+      <p class="text-start fs-5 text-dark">
+        <strong><a href="" class="fw-bold text-black fs-5"> Soil Mechanics:</a></strong> It is one of the
+        unique topics associated with the Civil Engineering syllabus. This
+        section comprises several topics that are important from the
+        <b>SSC-JE 2024</b> exam point of view. This includes the origin of
+        soil, phase diagram, Definitions-void ratio, porosity, degree of
+        saturation, water content, specific gravity of soil grains, unit
+        weighs, density index and interrelationship of different parameters,
+        Grain size distribution curves, and their uses, Index properties of
+        soil, Atterberg’s limits, ISI soil classification, plasticity chart,
+        Permeability of soil, co-efficient of permeability, and determination
+        of coefficient of permeability, Unconfined and confined aquifers,
+        effective stress, and quick sand.
+      </p>
+      <p class="text-start fs-5 text-dark">
+        Other topics present in this segment are Consolidation of soils,
+        Principles and degrees of consolidation, pre-consolidation pressure,
+        normally consolidated soil, e-log p curve, and computation of ultimate
+        settlement with tests such as Direct shear test, Vane shear test, and
+        Triaxial test. Other topics associated with the Soil Mechanics include
+        Soil compaction, Laboratory compaction test, Earth pressure theories,
+        Soil compaction, Laboratory compaction test, Maximum dry density and
+        optimum moisture content, active and passive earth pressures, and
+        bearing capacity of soils, plate load test, and standard penetration
+        test.
+      </p>
+      <p class="text-start fs-5 text-dark">
+        <strong><a href="" class="fw-bold text-black fs-5">Hydraulics: </a></strong>This interesting section
+        of Civil Engineering includes fluid properties, hydrostatics,
+        Bernoulli’s theorem with the application, flow through pipes, flow in
+        open channels, flumes, spillways, turbines, and pumps.
+      </p>
+      <p class="text-start fs-5 text-dark">
+        <strong><a href="" class="fw-bold text-black fs-5">Irrigation Engineering:</a></strong> This section
+        includes topics such as definition, necessity, benefits, ill effects
+        of irrigation, types, and methods of irrigation, Hydrology –
+        Measurement of rainfall, run-off coefficient, rain gauge, losses from
+        precipitation, evaporation, and infiltration, etc. Apart from this,
+        other topics present in this section include Water requirement of
+        crops, duty, delta and delta period, Kharif and Rabi Crops, Command
+        Area, Time factor, Crop ratio, Overlap allowance, Irrigation
+        efficiencies, different types of canals and canal irrigation, loss of
+        water in canals, canal lining.
+      </p>
+      <p class="text-start fs-5 text-dark">
+        Other crucial topics present in this segment include types and
+        advantages, Shallow and deep wells, Failure of weirs and permeable
+        foundation, Slit, and Scour, Theories such as Kennedy’s theory of
+        critical velocity, Lacey’s theory of uniform flow; Definition of
+        flood, causes, and effects, methods of flood control, and water
+        logging, preventive measures, land reclamation, Characteristics of
+        affecting fertility of soils, purposes, methods, description of land
+        and reclamation processes, and major irrigation projects in India.
+      </p>
+      <p class="text-start fs-5 text-dark">
+        <strong><a href="" class="fw-bold text-black fs-5">Transportation Engineering: </a></strong>This
+        section includes topics such as Highway Engineering (cross-sectional
+        elements), geometric design, series of tests, different types and
+        materials in pavements – aggregates and bitumen, Design of flexible
+        and rigid pavements. These designs include Water Bound Macadam (WBM)
+        and Wet Mix Macadam (WMM), Gravel Road, and Bituminous construction,
+        Rigid pavement joint, pavement maintenance, Highway drainage, and
+        Railway Engineering – Components of permanent way (sleepers, ballast,
+        fixtures, and fastening), track geometry, points and crossings, track
+        junction, stations, and yards. The other topics include Traffic
+        Engineering – Different traffic survey, speed-flow density, and their
+        interrelationships, intersections, and interchanges, traffic signals,
+        traffic operations, signs, and markings, and road safety.
+      </p>
+      <p class="text-start fs-5 text-dark">
+          <strong><a href="" class="fw-bold text-black fs-5">Environmental Engineering:</a></strong> Civil engineers need to know the crucial aspects associated with environmental engineering. This includes Quality of water, source of water supply, purification of water, distribution of water, the need for sanitization, sewerage systems, different types of servers such as circular, and oval ones, sewer appurtenances, and sewage treatments. Other important topics present in environmental engineering include solid waste management (types and effects), engineered management systems; Air pollution – pollutants, causes, and effects, control Noise pollution – cause, health effects, and control.
+      </p>
+      <h2 class="text-start py-5 fs-4 text-dark fw-bold">
+          Now, let us dive into the important topics for Structural Engineering.
+        </h2>
+      <p class="text-start fs-5 text-dark">
+          <strong><a href="" class="fw-bold text-black fs-5">Theory of structures:</a></strong> Elasticity constants, types of beams (determinate and indeterminate), bending moment, and shear force diagrams of simply supported, cantilever, and overhanging beams. Other topics include moment of area, moment of inertia for rectangular and circular sections, bending moment, shear stress for tee, channel, and compound sections, chimneys, dams and retaining walls, eccentric loads, slope deflection of simply supported and cantilever beams, critical load and columns, Torsion of circular section.
+      </p>
+      <p class="text-start fs-5 text-dark">
+          <strong><a href="" class="fw-bold text-black fs-5">Concrete Technology:</a></strong> This segment of the SSC-JE syllabus of Structural Engineering includes properties, advantages and uses of concrete, cement aggregates, water-cement ratio, importance of water quality, mix design, storage, batching, placement, and compaction. The other topics associated with this topic include finishing, curing, and quality control of concrete, hot and cold weather concreting, repair, and maintenance of concrete structures.
+      </p>
+      <p class="text-start fs-5 text-dark">
+         <strong><a href="" class="fw-bold text-black fs-5"> RCC Design: </a></strong>The RCC Design section includes RCC beams-flexural strength, shear strength, bond strength, and design of singly reinforced and double reinforced beams, cantilever beams, T-beams, and lintels. Apart from this, RCC Design also includes one-way and two-way slabs, isolated footings, reinforced brickworks, columns, staircases, retaining walls, and water tanks.
+      </p>
+      <p class="text-start fs-5 text-dark">
+          <strong><a href="" class="fw-bold text-black fs-5">Steel Design:</a></strong> Steel Design and construction of steel columns, beams, roof trusses, and plate girders.
+      </p>
+      <h1 class="text-start py-5 fs-3 text-dark fw-bold">
+          Part-B (Electrical Engineering)
+        </h1>
+      <p class="text-start fs-5 text-dark">
+         <strong><a href="" class="fw-bold text-black fs-5"> Basic concepts:</a></strong> Concepts of resistance, inductance, capacitance, and various factors affecting them. Along with this, other important topics in the subject of the SSC-JE exam include Concepts of current, voltage, power, energy, and their units.
+      </p>
+      <p class="text-start fs-5 text-dark">
+          <strong><a href="" class="fw-bold text-black fs-5">Circuit law:</a></strong> This section includes the major Kirchhoff’s law along with the Simple Circuit solution using network theorems.
+      </p>
+      <p class="text-start fs-5 text-dark">
+          <strong><a href="" class="fw-bold text-black fs-5">Magnetic Circuit: </a></strong>This segment linked with the circuits comprises topics such as Concept of flux, mmf, reluctance, magnetic materials, magnetic calculations for conductors of different configurations, (e.g., solenoidal, straight, circular), Electromagnetic induction, self, and mutual induction.
+      </p>
+      <p class="text-start fs-5 text-dark">
+          <strong><a href="" class="fw-bold text-black fs-5">AC Fundamentals: </a></strong>Instantaneous, peak, RMS and average values of alternating waves, Representation of sinusoidal wave form, simple series, and parallel AC Circuits comprising RL and C, Tank Circuit Poly Phase System – star and delta connection, and 3 phase power, DC and sinusoidal response of R-Land R-Circuit.
+      </p>
+      <p class="text-start fs-5 text-dark">
+         <strong><a href="" class="fw-bold text-black fs-5"> Measurement and measuring instruments:</a></strong> The important topics in the section include Measurement of power (1-phase and 3-phase, both active and non-active) and energy, 2 wattmeter method of 3 phase power measurement, Measurement of frequency and phase angle, Ammeter and voltmeter (both moving iron and moving oil type), extension of range wattmeter. The other topics present in this segment of Part-B (Electrical Engineering) include Multimeters, Megger, Energy meter, Earth Fault detection, AC Bridges, Use of CRO, Signal Generator, CT, PT, and their uses.
+      </p>
+      <p class="text-start fs-5 text-dark">
+          <strong><a href="" class="fw-bold text-black fs-5">Electrical Machines:</a></strong> This part of the syllabus is divided into three parts. It includes a) DC Machine – Construction, Basic Principles of DC motors and generators, their characteristics, speed control, starting of DC Motors Method of braking motor, losses, and DC Machines efficiency. b) 1 phase and 3 phase transformers – Construction, Principles of operation, equivalent circuit, voltage regulation, OC and SC tests, Effect of voltage, losses, and efficiency, frequency and wave form on losses, Parallel operation of 1 phase or 3 phase transformers, and Auto transformers. c) 3-phase induction motors, rotating magnetic field, principles of operation, equivalent circuit, torque-speed characteristics, starting and speed control of 3 phase induction motors, Methods of breaking, effect of voltage and frequency variation on torque speed characteristics. Another topic that forms a crucial part of this section’s SSC-JE syllabus is Fractional Kilowatt Motors and Single Phase Induction Motors with their characteristics and applications.
+      </p>
+      <p class="text-start fs-5 text-dark">
+          <strong><a href="" class="fw-bold text-black fs-5">Synchronous Machines:</a></strong> In this topic, certain aspects related to the SSC-JE syllabus are covered. This includes the Generation of a 3-phase emf armature reaction, voltage regulation, parallel operation of two alternators, synchronizing, control of active and reactive power, and applications of synchronous machines.
+      </p>
+      <p class="text-start fs-5 text-dark">
+          <strong><a href="" class="fw-bold text-black fs-5">Generation, Transmission, and Distribution:</a></strong> This section includes different types of power stations, certain factors such as load factor, diversity factor, and demand factor; cost of generation, inter-connection of Power stations, Power factor improvement, different types of faults and tariffs, short circuit current for symmetrical faults. Apart from this, Switchgears – rating of circuit breakers, Principles of arc extinction by oil and air, HRC Fuses, and Protection against earth leakage or over current, Buccholtz relay, Merz-Price system of protection of generators and transformers, protection of feeders and bus bars, Lightning arresters, transmission and distribution systems. Along with this, several other topics are also included in the syllabus. This includes conductor materials comparison, efficiency of different systems; Cable – different types of cables, cable rating, and derating factor.
+      </p>
+      <h1 class="text-start py-5 fs-4 text-dark fw-bold">
+          Official Notification: <a href="" class="px-2" style="text-decoration: none;color: #1a237e;border: 3px solid #1a237e;">Click Here</a>
+        </h1>
+      </table>
+    </div>
+</div>
+
+    
+  <style>
+    p a {
+      text-decoration: none;
+    }
+
+  </style>
+    
+
+   
+       <!-------------- modal start----------------->
+
+<button type="button" id="btn-enquiry"  style="background-color: #1a237e;box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);color:white;" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">QUICK ENQUIRY <i class="fas fa-arrow-up"></i></button>
+
+<div class="modal fade btn-enquiry" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-end">
+    <div class="modal-content" style="background-color: #1d6792;z-index: 999999999;">
+      
+      <div class="modal-header">
+        <h1 class="modal-title fs-4 text-white" id="exampleModalLabel">REGISTRATION</h1>
+        <button type="button" class="btn-close text-white bg-light" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      
+      <div class="modal-body">
+        <form>
+          
+          <div class="mb-3">
+            <!-- <label for="recipient-name" class="col-form-label">Name</label> -->
+            <input type="text" class="form-control border-0  border-2  rounded-0" id="recipient-name" placeholder="Name" required>
+          </div>
+          <div class="mb-3">
+            <!-- <label for="recipient-email" class="col-form-label">Email</label> -->
+            <input type="email" class="form-control border-0  border-2  rounded-0" id="recipient-email" placeholder="Email" required>
+          </div>
+
+          <div class="mb-3">
+            <!-- <label for="recipient-phone" class="col-form-label">Phone</label> -->
+            <input type="tel" class="form-control border-0  border-2  rounded-0" id="recipient-phone" placeholder="Phone No" required>
+          </div>
+
+          <div class="mb-3">
+            <!-- <label for="recipient-phone" class="col-form-label">Select one option</label> -->
+            <select class="form-select border-0  border-2  rounded-0" aria-label="Default select example" required>
+              <option selected class="text-white" >Select one option</option>
+              <option class="text-black">Google</option>
+              <option class="text-black">Social Media</option>
+              <option class="text-black">TV</option>
+              <option class="text-black">Radio</option>
+              <option class="text-black">Friend and Family</option>
+            </select>
+          </div>
+
+          <div class="mb-3">
+            <!-- <label for="message-text" class="col-form-label">Message:</label> -->
+            <textarea class="form-control border-0  border-2 rounded-0" id="message-text" placeholder="message"></textarea>
+          </div>
+
+        </form>
+      </div>
+        <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+        <button type="submit" class="btn  w-25 mb-3 text-center text-white" style="margin: 0 auto;background-color: #1a237e;">Submit</button>
+    </div>
+  </div>
+</div>
+<!-------------- modal end ---------------->
+
+<div class="add-button p-2">
+  <a href="https://wa.me/8273373357">
+      <img src="img/whatsapp.png" alt="whatsapp" style="color: #1eac02; width: 60%;">
+  </a>
+</div>
+   
+<footer class="text-center text-lg-start bg-dark py-3 text-white">
+  <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+    <div class="me-lg-5 mb-4">
+      <span>Get connected with us on social networks:</span>
+    </div>
+
+    <div>
+      <a href="https://www.facebook.com/ranaankit.dehradun/" class="me-4 text-reset">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="#" class="me-4 text-reset">
+        <i class="fab fa-linkedin"></i>
+      </a>
+     
+      <a href="https://www.instagram.com/dronaddun/" class="me-4 text-reset">
+        <i class="fab fa-instagram"></i>
+      </a>
+     
+    </div>
+  </section>
+
+  <section class="container-fluid text-center text-md-start mt-5">
+    <div class="row mt-3">
+      <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+        <h4 class="text-uppercase fw-bold mb-4">DRONACHARYA </h4>
+        <p>
+          DRONACHARYA is one of the leading coaching institutes committed to
+          providing premium quality education to the students who are
+          willing to appear in any competitive exams
+        </p>
+      </div>
+
+      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+        <h6 class="text-uppercase fw-bold mb-4">Featured Links</h6>
+        <p><a href="index.html" class="text-reset">Home</a></p>
+        <p><a href="gallery.html" class="text-reset">Gallery</a></p>
+        <p><a href="courses.html" class="text-reset">Courses</a></p>
+        <p><a href="contact.html" class="text-reset">Contact</a></p>
+      </div>
+
+      <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+        <h6 class="text-uppercase fw-bold mb-4">COACHING</h6>
+        <p><a href="gate.html" class="text-reset">GATE</a></p>
+        <p><a href="defence.html" class="text-reset">DEFENCE</a></p>
+        <p><a href="ese.html" class="text-reset">ESE</a></p>
+        <p><a href="ssc-je.html" class="text-reset">SSC JE</a></p>
+      </div>
+
+      <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4" id="footer-add">
+        <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+        <p class="mb-1">
+          <i class="fas fa-home me-3"></i><a href="https://maps.app.goo.gl/4wfXp9JYuqv8EDC68">Ojaswi Complex – Top
+            Floor, General Mahadev Singh Rd, Ballupur
+            Chowk, Ballupur, Dehradun, Uttarakhand 248001</a>
+        </p>
+        <p class="mb-1">
+          <i class="fas fa-phone me-2"></i><a href="tel:9412611114">9412611114</a>
+        </p>
+        <p class="mb-1">
+          <i class="fas fa-phone me-2"></i><a href="tel:8273373357">8273373357</a>
+        </p>
+      </div>
+    </div>
+  </section>
+</footer>
+
+
+
+    <div class="text-center p-2" style="background-color:#1a237e;color:white;">
+      © 2023 Copyright:
+      <a class="text-reset fw-bold" href="https://www.vervegen.com" style="text-decoration: none;">
+        Vervegen Tech Pvt Ltd</a>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+        integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"></script>
+<script type="text/javascript" charset="utf8"
+src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.js"></script>
+
+       
+<script>
+  $(document).ready(function () {
+      $('#example').DataTable({
+          "paging": true,
+          "pageLength": 10, // You can adjust the number of rows per page
+          "lengthMenu": [10, 25, 50, 100], // Options for rows per page dropdown
+          "info": true, // Display information about the table
+          "responsive": true, // Enable responsive design
+      });
+  });
+</script>
+
+<script>
+  $(document).ready(function() {
+      $('#qualificationTable').DataTable();
+  });
+</script>
+</body>
+
+</html>

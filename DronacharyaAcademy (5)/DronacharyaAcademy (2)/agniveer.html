@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dronacharya Academy</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <style>
+      .has-megamenu li a {
+        text-decoration: none;
+        color: black;
+        list-style: circle;
+      }
+
+      @media (min-width: 900px) and (max-width: 1400px) {
+        .megamenu {
+          width: 50% !important;
+          /* margin: 0 30px !important;  */
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav class="navbar bg-body-tertiary d-flex">
+      <div class="container-fluid mx-lg-5 mx-md-2 mx-sm-1">
+        <a
+          class="navbar-brand"
+          href="#"
+          data-aos="fade-right"
+          data-aos-duration="2000"
+        >
+          <img
+            src="./img/cropped-logo-removebg-preview.png"
+            alt="Logo"
+            width="40"
+            height="30"
+            class="d-inline-block align-text-top"
+          />
+          Dronacharya Academy
+        </a>
+        <div class="add" data-aos="fade-right" data-aos-duration="2000">
+          <ul
+            class="d-flex justify-content-end"
+            style="list-style: none"
+            id="list-add"
+          >
+            <li class="me-4">
+              <i class="fas fa-user-graduate fa-lg"></i>
+              <a
+                href="registration.html"
+                style="text-decoration: none; color: black"
+                >Online Admission</a
+              >
+            </li>
+            <li class="me-4">
+              <i class="fas fa-book fa-lg"></i>
+              <a href="career.html" style="text-decoration: none; color: black"
+                >Careers</a
+              >
+            </li>
+            <li class="">
+              <i class="fas fa-user fa-lg"></i>
+              <a href="contact.html" style="text-decoration: none; color: black"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #1a237e">
+      <div class="container-fluid">
+        <!-- <a class="navbar-brand" href="#">Brand</a> -->
+        <button class="navbar-toggler ms-auto text-white" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"
+          aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <div class="collapse navbar-collapse justify-content-center" id="main_nav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link text-white" href="index.html">HOME</a>
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link text-white" href="about-us.html">ABOUT US</a>
+            </li> -->
+            
+            <li class="nav-item">
+              <a class="nav-link text-white" href="ese.html">ESE</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-white" href="#" data-bs-toggle="dropdown">GATE
+              </a>
+              <ul class="dropdown-menu dropdown-menu-end">
+                <li>
+                  <a class="dropdown-item" href="gate.html">About Gate</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="list-of-iits.html">Lists of IITS</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="list-of-iiits.html">Lists of IIITS</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="list-of-nits.html">Lists of NITS</a>
+                </li>
+                 <li><a class="dropdown-item" href="gateexamsyllabs.html"> GATE EXAM Syllabus </a></li> 
+              </ul>
+            </li>
+  
+            <li class="nav-item">
+              <a class="nav-link text-white" href="ssc-je.html">SSC JE</a>
+            </li>
+  
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-white" href="#" data-bs-toggle="dropdown">COURSES
+              </a>
+              <ul class="dropdown-menu dropdown-menu-end">
+                <li>
+                  <a class="dropdown-item" href="">ESE + GATE : 1 Year Foundation Course</a>
+                  <ul>
+                    <li>
+                      <a href="ESE+GATE1YearFoundationCourse.html" class="text-primary" style="text-decoration: none;">Regular</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="">GATE : 1 Year Foundation Course</a>
+                  <ul>
+                    <li>
+                      <a href="GATE1YearFoundationCourse.html" class="text-primary" style="text-decoration: none;">Regular</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a class="dropdown-item" href=""> SSC-JE / STATE-JE Course</a>
+                  <ul>
+                    <li>
+                      <a href="STATE-JECourse.html" class="text-primary" style="text-decoration: none;">Regular</a>
+                    </li>
+                  </ul>
+                </li>
+                
+               
+              </ul>
+            </li>
+  
+            <li class="nav-item">
+              <a class="nav-link text-white" href="batches.html">NEW BATCHES</a>
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link text-white" href="ssc-je.html"> SSC JE</a>
+            </li> -->
+            <!-- <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-white" href="#" data-bs-toggle="dropdown">COURSES
+              </a>
+              <ul class="dropdown-menu dropdown-menu-end">
+                <li>
+                  <a class="dropdown-item" href="gate.html">GATE</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="">ESE</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="">CSE</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="">UPPSCE</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="">MPSC</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="">OPSC</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="">BPSC</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="">RSSB-JE</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="ssc-je.html">SSC-JE</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="">GS FOR STATE EXAM</a>
+                </li>
+                <li><a class="dropdown-item" href="#"> Submenu item 2 </a></li>
+              </ul>
+            </li> -->
+            <li class="nav-item">
+              <a class="nav-link text-white" href="FeeStructure.html">FEE STRUCTURE</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="our-result.html">OUR RESULT</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-white" href="#" data-bs-toggle="dropdown">ABOUT US
+              </a>
+              <ul class="dropdown-menu dropdown-menu-end">
+                <li>
+                  <a class="dropdown-item" href="whychoseus.html">WHY DRONACHARYA ACADEMY</a>
+                </li>
+               
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="study-material.html">STUDY MATERIAL</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-white" href="#" data-bs-toggle="dropdown">DEFENCE
+              </a>
+              <ul class="dropdown-menu dropdown-menu-end">
+                <li>
+                  <a class="dropdown-item" href="nda.html">NDA</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="cds.html">CDS</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="afcat.html">AFCAT</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="agniveer.html">AGNIVEER</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="ssb.html">SSB</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="aboutRIMC.html">RIMC</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="mns.html"> MNS</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="sainik.html"> SAINIK SCHOOL</a>
+                </li>
+                <!-- <li>
+                  <a class="dropdown-item" href="">X-GROUP</a>
+                </li> -->
+                <!-- <li><a class="dropdown-item" href="#"> Submenu item 2 </a></li> -->
+              </ul>
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link text-white" href="nda.html">NDA</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="cds.html">CDS</a>
+            </li> -->
+            <li class="nav-item">
+              <a class="nav-link text-white" href="https://vervegenlms.com/">TEST SERIES</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div
+      id="intro-example"
+      class="text-center bg-image"
+      style="
+        background-image: url('./img/agneever-2.jpeg');
+        background-size: cover;
+        background-repeat: no-repeat;
+      "
+    >
+      <div
+        class="mask"
+        style="background-color: rgba(0, 0, 0, 0.322); height: 60vh"
+      >
+        <div
+          class="d-flex text-center justify-content-center align-items-center h-100"
+        >
+          <div class="text-white text-center">
+            <h1 class="mb-3 fs-1 fw-bold">अग्निपथ योजना/AGNIVEER</h1>
+            <h5 class="mb-4 fs-5 fw-normal" style="line-height: normal">
+              अग्नि योजना सशस बलोंकी तीन सेवाओंमेकमीशन अगिकारियोंके नद सेनीचेके
+              सैगनकों <br />की भत् के गलए भाित सिकाि दािा शुर की गई एक नई योजना
+              है। इसकी घोषणा 16 जून 2022 को की गई।<br />
+              इस योजना के तहत सेना मेशागमल होनेवालेजवानोंको ‘अग्वीि’ के नाम
+              सेजाना जाएगा
+            </h5>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- hero section start  -->
+
+    <div class="container-fluid p-2" style="background-color: #1a227e44">
+      <div class="card border-0">
+        <div
+          class="card-header mx-auto text-white w-100 fs-4 fw-bold"
+          style="background-color: #1a237e"
+        >
+          योग्यता अथवा मापदंड
+        </div>
+        <div class="card-body">
+          <p class="card-text fs-6 fw-bold">
+            केंद्र सरकार द्वारा जल्द ही अग्निपथ योजना के लिए भर्ती शुरू की
+            जाएगी, अग्निपथ योजना के तहत सेना का हिस्सा बनने के लिए योग्यता कुछ
+            इस प्रकार निर्धारित की गयी है:
+          </p>
+          <ol>
+            <li class="card-text fs-6 fw-medium">
+              अग्निपथ के लिए 17.5 साल से 23 साल के बीच के उम्मीदवार आवेदन कर
+              सकेंगे। हालांकि असल में अग्निपथ स्कीम के तहत सेना का हिस्सा बनने
+              के लिए सरकार द्वारा निर्धारित तय आयु सिमा 17.5 साल से 21 वर्ष की
+              है। कोरोना महामारी के कारण पिछले 2 सालों से रुकी हुई भर्ती के कारण
+              अधिक से अधिक युवाओं को मौका देने के लिए के केवल पहले साल की भर्ती
+              में उम्र सीमा में 2 साल की छूट दी गयी है।
+            </li>
+            <li class="card-text fs-6 fw-medium">
+              आवेदन करने वाले युवा कम से कम 50 फीसदी नंबरों के साथ 12वीं पास
+              होने चाहिए।
+            </li>
+            <li class="card-text fs-6 fw-medium">
+              भर्ती होने वाले युवाओं को छह महीने तक ट्रेनिंग दी जाएगी. इसके बाद
+              3.5 साल तक सेना में सर्विस देनी होगी।
+            </li>
+            <li class="card-text fs-6 fw-medium">
+              भर्ती के लिए अन्य क्राइटीरिया को जल्द ही सरकार द्वारा जारी कर दिया
+              जाएगा
+            </li>
+          </ol>
+        </div>
+      </div>
+      <div class="card border-0">
+        <div
+          class="card-header mx-auto text-white w-100 fs-4 fw-bold"
+          style="background-color: #1a237e"
+        >
+          अग्निपथ स्कीम की विशेषता
+        </div>
+        <div class="card-body">
+          <p class="card-text fs-6 fw-bold">
+            हालांकि अग्निपथ स्कीम को लेकर देश के युवा, पूर्व सेना अधिकारी और
+            नागरिकों में विभिन्न प्रतिक्रियाएं और मतभेद की स्तिथि बानी हुई है।
+            इसके बावजूद भारत सरकार की रक्षा मंत्रालय द्वारा अग्निपथ स्कीम को
+            लेकर गिनाये गए विशेषताएं कुछ इस प्रकार है।
+          </p>
+          <ol>
+            <li class="card-text fs-6 fw-medium">
+              मेरिट के आधार पर देश भर से युवा इस योजना में शामिल होकर इसका
+              हिस्सा बन सकेंगे।
+            </li>
+            <li class="card-text fs-6 fw-medium">
+              इसमें जात-पात या धर्म के आधार पर आरक्षण की बातें नहीं की गयी।
+            </li>
+            <li class="card-text fs-6 fw-medium">
+              इस योजना के जरिये भर्ती होने वाले सेना के जवान को अग्निवीर के नाम
+              से जाना जाएगा।
+            </li>
+            <li class="card-text fs-6 fw-medium">
+              चार वर्ष की सेवा के पश्चात 25 प्रतिशत अग्निवीरों को उनकी कौशलता के
+              आधार पर स्थाई किया जाएगा।
+            </li>
+            <li class="card-text fs-6 fw-medium">
+              स्थाई कैडर का हिस्सा बन जाने के पश्चात अग्निवीरों बाकी जवानो की ही
+              तरह पेंशन और अन्य सुविधाएं मुहैया कराई जाएगी।
+            </li>
+            <li class="card-text fs-6 fw-medium">
+              सेवा समाप्ति के पश्चात अग्निवीरों को उनकी कौशलता के अनुरूप स्किल
+              सर्टिफिकेट दिया जाएगा। जो भविष्य में उनके लिए रोजगार के रास्ते
+              खोलेगा।
+            </li>
+            <li class="card-text fs-6 fw-medium">
+              रक्षा मंत्रालय और विभिन्न राज्यों द्वारा उनकी बहाली प्रक्रिया जैसे
+              केंद्रीय बल, राज्य पुलिस बल इत्यादि में अग्निवीरों को तरजीह दी
+              जाएगी।
+            </li>
+            <li class="card-text fs-6 fw-medium">
+              सेवा के दौरान किसी प्रकार की अनहोनी होने की अवस्था को मद्देनज़र
+              अग्निवीरों को 48 लाख रूपए का बिमा किया जाएगा।
+            </li>
+            <li class="card-text fs-6 fw-medium">
+              अग्निपथ स्कीम के तहत सेना के जवान अर्थात् अग्निवीरों को भी
+              उत्त्कृष्ट प्रदर्शन के एवज में गैलेंट्री अवार्ड से सम्मानित किया
+              जाएगा।
+            </li>
+          </ol>
+        </div>
+      </div>
+      <div class="card border-0">
+        <div
+          class="card-header mx-auto text-white w-100 fs-4 fw-bold"
+          style="background-color: #1a237e"
+        >
+          सैलरी और तैनाती
+        </div>
+        <div class="card-body">
+          <p class="card-text fs-6 fw-bold">
+            योजना के तहत शुरुआती वेतन 30,000 रुपये दिया जाएगा जोकि सर्विस के
+            चौथे साल तक बढ़ाकर 40 हजार रुपये तक हो जाएगा। सेवा निधि योजना के तहत
+            सरकार वेतन का 30 फीसदी हिस्सा सेविंग के रूप में रख लेगी। साथ ही
+            इसमें वह भी इतना ही योगदान करेगी। चार साल बाद सैनिकों को 10 लाख से
+            12 लाख रुपये दिए जाएंगे। ये पैसा टैक्स फ्री होगा। योजना के तहत भर्ती
+            होने वाले युवाओं को कश्मीर और देश के अलग-अलग हिस्सों में तैनात किया
+            जाएगा।
+          </p>
+
+          <div class="container">
+    <div class="table-responsive">
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Year</th>
+                    <th>Total Monthly Salary</th>
+                    <th>In Hand</th>
+                    <th>Agni veer Corpus Fund Contributions(30% of Salary)</th>
+                    <th>Gov Corpus Fund Contributions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>First Year</td>
+                    <td>30000</td>
+                    <td>21000</td>
+                    <td>9000</td>
+                    <td>9000</td>
+                </tr>
+                <tr>
+                    <td>Second Year</td>
+                    <td>33000</td>
+                    <td>23100</td>
+                    <td>9900</td>
+                    <td>9900</td>
+                </tr>
+                <tr>
+                    <td>Third Year</td>
+                    <td>36500</td>
+                    <td>25500</td>
+                    <td>10950</td>
+                    <td>10950</td>
+                </tr>
+                <tr>
+                    <td>Fourth Year</td>
+                    <td>40000</td>
+                    <td>28000</td>
+                    <td>12000</td>
+                    <td>12000</td>
+                </tr>
+                <tr>
+                    <td>Total Contribution</td>
+                    <td></td>
+                    <td></td>
+                    <td>5.02 Lakhs</td>
+                    <td>5.02 Lakhs</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+          <p class="card-text fs-6 fw-bold">
+            अग्निवीर द्वारा चार वर्षों की सेवा समाप्ति के बाद वैसे 25 प्रतिशत
+            अग्निवीर जो सेना में स्थाई सदस्य बनेंगे, उन्हें सेवा निधि से केवल
+            उनके द्वारा किये गए जमा राशि प्राप्त होंगे। इसके अलावा वैसे जो 4 साल
+            की सेवा समाप्ति के पश्चात सेना से बाहर होंगे उन्हें सेवा निधि के तहत
+            लगभग 10.04 लाख रूपए ब्याज सहित दी जाएगी। जिसका इस्तेमाल पढाई,
+            व्यवसाय या अन्य कार्यों में अग्निवीर कर सकेंगे।
+          </p>
+        </div>
+      </div>
+      <div class="card border-0">
+        <div
+          class="card-header mx-auto text-white w-100 fs-4 fw-bold"
+          style="background-color: #1a237e"
+        >
+        अग्निपथ योजना का उद्देश्य
+        </div>
+        <div class="card-body">
+          <ol>
+            <li class="card-text fs-6 fw-medium">
+                अधिक से अधिक युवाओं को रोजगार के अवसर प्रदान करना।
+            </li>
+            <li class="card-text fs-6 fw-medium">
+                अग्निपथ योजना के अंतर्गत जुड़े युवाओं को सशक्त और मज़बूत बनाना।
+            </li>
+            <li class="card-text fs-6 fw-medium">
+                देश की बेरोज़गारी को कम करना।
+            </li>
+            <li class="card-text fs-6 fw-medium">
+                युवाओं को अपने आने वाले भविष्य के लिए तैयार करना।
+            </li>
+            <li class="card-text fs-6 fw-medium">
+                सेना से जुड़े प्रशिक्षण देकर उनके आत्मविश्वास को बढ़ाना।
+            </li>
+            <li class="card-text fs-6 fw-medium">
+                युवाओं के बीच अनुशाषन के प्रति जागरूकता पैदा करना।
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+
+<!-------------- modal start----------------->
+
+<button type="button" id="btn-enquiry"  style="background-color: #1a237e;box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);color:white;" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">QUICK ENQUIRY <i class="fas fa-arrow-up"></i></button>
+
+<div class="modal fade btn-enquiry" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-end">
+    <div class="modal-content" style="background-color: #1d6792;">
+      
+      <div class="modal-header">
+        <h1 class="modal-title fs-4 text-white" id="exampleModalLabel">REGISTRATION</h1>
+        <button type="button" class="btn-close text-white bg-light" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      
+      <div class="modal-body">
+        <form>
+          
+          <div class="mb-3">
+            <!-- <label for="recipient-name" class="col-form-label">Name</label> -->
+            <input type="text" class="form-control border-0  border-2  rounded-0" id="recipient-name" placeholder="Name" required>
+          </div>
+          <div class="mb-3">
+            <!-- <label for="recipient-email" class="col-form-label">Email</label> -->
+            <input type="email" class="form-control border-0  border-2  rounded-0" id="recipient-email" placeholder="Email" required>
+          </div>
+
+          <div class="mb-3">
+            <!-- <label for="recipient-phone" class="col-form-label">Phone</label> -->
+            <input type="tel" class="form-control border-0  border-2  rounded-0" id="recipient-phone" placeholder="Phone No" required>
+          </div>
+
+          <div class="mb-3">
+            <!-- <label for="recipient-phone" class="col-form-label">Select one option</label> -->
+            <select class="form-select border-0  border-2  rounded-0" aria-label="Default select example" required>
+              <option selected class="text-white" >Select one option</option>
+              <option class="text-black">Google</option>
+              <option class="text-black">Social Media</option>
+              <option class="text-black">TV</option>
+              <option class="text-black">Radio</option>
+              <option class="text-black">Friend and Family</option>
+            </select>
+          </div>
+
+          <div class="mb-3">
+            <!-- <label for="message-text" class="col-form-label">Message:</label> -->
+            <textarea class="form-control border-0  border-2 rounded-0" id="message-text" placeholder="message"></textarea>
+          </div>
+
+        </form>
+      </div>
+        <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+        <button type="submit" class="btn  w-25 mb-3 text-center text-white" style="margin: 0 auto;background-color: #1a237e;">Submit</button>
+    </div>
+  </div>
+</div>
+<!-------------- modal end ---------------->
+
+<div class="add-button p-2">
+  <a href="https://wa.me/8273373357">
+      <img src="img/whatsapp.png" alt="whatsapp" style="color: #1eac02; width: 60%;">
+  </a>
+</div>
+
+    <footer class="text-center text-lg-start bg-dark py-3 text-white">
+      <section
+        class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
+      >
+        <div class="me-lg-5 mb-4">
+          <span>Get connected with us on social networks:</span>
+        </div>
+
+        <div>
+          <a
+            href="https://www.facebook.com/ranaankit.dehradun/"
+            class="me-4 text-reset"
+          >
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="#" class="me-4 text-reset">
+            <i class="fab fa-twitter"></i>
+          </a>
+         
+          <a href="#" class="me-4 text-reset">
+            <i class="fab fa-instagram"></i>
+          </a>
+         
+        </div>
+      </section>
+
+      <section class="container-fluid text-center text-md-start mt-5">
+        <div class="row mt-3">
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <h4 class="text-uppercase fw-bold mb-4">DRONACHARYA</h4>
+            <p>
+              DRONACHARYA is one of the leading coaching institutes committed to
+              providing premium quality education to the students who are
+              willing to appear in any competitive exams
+            </p>
+          </div>
+
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <h6 class="text-uppercase fw-bold mb-4">Featured Links</h6>
+            <p><a href="index.html" class="text-reset">Home</a></p>
+            <p><a href="about-us.html" class="text-reset">About</a></p>
+            <p><a href="courses.html" class="text-reset">Courses</a></p>
+            <p><a href="contact.html" class="text-reset">Contact</a></p>
+          </div>
+
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <h6 class="text-uppercase fw-bold mb-4">COACHING</h6>
+            <p><a href="gate.html" class="text-reset">GATE</a></p>
+            <p><a href="defence.html" class="text-reset">DEFENCE</a></p>
+            <p><a href="#" class="text-reset">PSU </a></p>
+            <p><a href="ssc-je.html" class="text-reset">SSC JE</a></p>
+          </div>
+
+          <div
+            class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4"
+            id="footer-add"
+          >
+            <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+            <p class="mb-1">
+              <i class="fas fa-home me-3"></i
+              ><a href="https://maps.app.goo.gl/4wfXp9JYuqv8EDC68"
+                >Ojaswi Complex – Top Floor, General Mahadev Singh Rd, Ballupur
+                Chowk, Ballupur, Dehradun, Uttarakhand 248001</a
+              >
+            </p>
+            <p class="mb-1">
+              <i class="fas fa-phone me-2"></i
+              ><a href="tel:9412611114">9412611114</a>
+            </p>
+            <p class="mb-1">
+              <i class="fas fa-phone me-2"></i
+              ><a href="tel:8273373357">8273373357</a>
+            </p>
+          </div>
+        </div>
+      </section>
+    </footer>
+    <div
+      class="text-center p-2"
+      style="background-color: #1a237e; color: white"
+    >
+      © 2023 Copyright:
+      <a
+        class="text-reset fw-bold"
+        href="https://www.vervegen.com"
+        style="text-decoration: none"
+      >
+        Vervegen Tech Pvt Ltd</a
+      >
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+      integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"></script>
+  </body>
+</html>

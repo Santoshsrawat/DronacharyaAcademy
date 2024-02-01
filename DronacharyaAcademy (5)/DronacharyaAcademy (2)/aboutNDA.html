@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dronacharya Academy</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+
+    <link href="css/style.css" rel="stylesheet">
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <style>
+    * {
+      padding: 0px;
+      margin: 0px;
+      font-family: "DM Sans", sans-serif;
+    }
+    .add {
+      margin-top: 10px;
+    }
+
+    /* ============ desktop view ============ */
+    @media all and (min-width: 992px) {
+      .navbar .has-megamenu {
+        position: static !important;
+      }
+
+      .navbar .megamenu {
+        left: 0;
+        right: 0;
+        width: 100%;
+        margin-top: 0;
+      }
+    }
+    @media (max-width: 991px) {
+      .navbar.fixed-top .navbar-collapse,
+      .navbar.sticky-top .navbar-collapse {
+        overflow-y: auto;
+        max-height: 90vh;
+        margin-top: 10px;
+      }
+    }
+
+    .navbar ul li a {
+      font-weight: 700;
+    }
+
+    body {
+      overflow-x: hidden;
+      background-color: #eff1f5;
+      font-family: "DM Sans", sans-serif;
+    }
+
+    /* ============ mobile view .end// ============ */
+
+    @media (max-width: 500px) {
+      .add {
+        display: none;
+      }
+    }
+
+    @media (max-width: 900px) and (min-width: 500px) {
+   
+      #list-add li {
+        font-size: 14px !important;
+        margin: 0 0 !important;
+      }
+
+      #list-add {
+        display: none !important;
+      }
+    }
+
+    @media (max-width: 1370px) and (min-width: 901px) {
+      #list-add1 {
+        display: none !important;
+      }
+    }
+
+    .navbar span {
+      font-size: 1em;
+      font-weight: bold;
+    }
+
+    .navbar-nav li a {
+      margin-right: 11px;
+    }
+
+    @media (max-width: 1150px) and (min-width: 992px) {
+      .navbar-nav li .nav-link {
+        font-size: 10px;
+      }
+
+      .navbar-nav li a {
+        margin-right: 9px;
+      }
+    }
+    .testimonial {
+      font-size: 17px;
+    }
+
+    p a {
+      text-decoration: none;
+    }
+
+    h5 {
+      font-size: 18px;
+    }
+
+    h6 {
+      font-size: 14px;
+    }
+
+    p {
+      font-size: 14px;
+    }
+
+    @media (max-width: 1366px) and (min-width: 992px) {
+      #card-add {
+        height: 420px;
+      }
+    }
+
+    @media (max-width: 1366px) and (min-width: 992px) {
+      #card-add-2 {
+        height: 390px;
+      }
+    }
+  </style>
+
+  <style>
+    .has-megamenu li a{
+         text-decoration: none;
+        color:black;
+        list-style: circle; 
+      }
+  
+      @media (min-width:900px) and (max-width:1400px){
+      .megamenu{
+        width:50% !important; 
+        /* margin: 0 30px !important;  */
+      }
+    }
+    </style>
+  
+  </head>
+  
+  <body>
+  
+    <nav class="navbar bg-body-tertiary d-flex">
+      <div class="container-fluid mx-lg-5 mx-md-2 mx-sm-1">
+        <a class="navbar-brand" href="#" >
+          <img src="./img/cropped-logo-removebg-preview.png" alt="Logo" width="40" height="30"
+            class="d-inline-block align-text-top" />
+          Dronacharya Academy
+        </a>
+        <div class="add" >
+          <ul class="d-flex justify-content-end" style="list-style: none; " id="list-add">
+            <li class="me-4">
+              <i class="fas fa-user-graduate fa-lg"></i> <a href="registration.html" style="
+                text-decoration: none;
+                color:black;
+              ">Online Admission</a>
+            </li>
+            <li class="me-4"><i class="fas fa-book fa-lg"></i> <a href="career.html" style="
+              text-decoration: none;
+              color:black;
+            ">Careers</a></li>
+            <li class=""><i class="fas fa-user fa-lg"></i> <a href="contact.html" style="
+                text-decoration: none;
+                color:black;
+              ">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  
+  
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #1a237e">
+      <div class="container-fluid">
+        <!-- <a class="navbar-brand" href="#">Brand</a> -->
+        <button class="navbar-toggler ms-auto text-white" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"
+          aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <div class="collapse navbar-collapse justify-content-center" id="main_nav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link text-white" href="index.html">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="ese.html">ESE</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-white" href="#" data-bs-toggle="dropdown">GATE
+              </a>
+              <ul class="dropdown-menu dropdown-menu-end">
+                <li>
+                  <a class="dropdown-item" href="gate.html">About Gate</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="list-of-iits.html">Lists of IITS</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="list-of-iiits.html">Lists of IIITS</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="list-of-nits.html">Lists of NITS</a>
+                </li>
+                 <li><a class="dropdown-item" href="gateexamsyllabs.html"> GATE EXAM Syllabus </a></li> 
+              </ul>
+            </li>
+  
+            <li class="nav-item">
+              <a class="nav-link text-white" href="ssc-je.html">SSC JE</a>
+            </li>
+  
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-white" href="#" data-bs-toggle="dropdown">COURSES
+              </a>
+              <ul class="dropdown-menu dropdown-menu-end">
+                <li>
+                  <a class="dropdown-item" href="">ESE + GATE : 1 Year Foundation Course</a>
+                  <ul>
+                    <li>
+                      <a href="ESE+GATE1YearFoundationCourse.html" class="text-primary" style="text-decoration: none;">Regular</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="">GATE : 1 Year Foundation Course</a>
+                  <ul>
+                    <li>
+                      <a href="GATE1YearFoundationCourse.html" class="text-primary" style="text-decoration: none;">Regular</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a class="dropdown-item" href=""> SSC-JE / STATE-JE Course</a>
+                  <ul>
+                    <li>
+                      <a href="STATE-JECourse.html" class="text-primary" style="text-decoration: none;">Regular</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+  
+            <li class="nav-item">
+              <a class="nav-link text-white" href="batches.html">NEW BATCHES</a>
+            </li>
+           
+            <li class="nav-item">
+              <a class="nav-link text-white" href="FeeStructure.html">FEE STRUCTURE</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="our-result.html">OUR RESULT</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-white" href="#" data-bs-toggle="dropdown">ABOUT US
+              </a>
+              <ul class="dropdown-menu dropdown-menu-end">
+                <li>
+                  <a class="dropdown-item" href="whychoseus.html">WHY DRONACHARYA ACADEMY</a>
+                </li>
+               
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="study-material.html">STUDY MATERIAL</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-white" href="#" data-bs-toggle="dropdown">DEFENCE
+              </a>
+              <ul class="dropdown-menu dropdown-menu-end">
+                <li>
+                  <a class="dropdown-item" href="nda.html">NDA</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="cds.html">CDS</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="afcat.html">AFCAT</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="agniveer.html">AGNIVEER</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="ssb.html">SSB</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="aboutRIMC.html">RIMC</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="mns.html"> MNS</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="sainik.html"> SAINIK SCHOOL</a>
+                </li>
+               
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="https://vervegenlms.com/">TEST SERIES</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  
+
+
+    <!-- Hero section start  -->
+    <div
+id="intro-example"
+class="text-center bg-image"
+style="
+  background-image: url('./img/rimc.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+"
+>
+<div
+  class="mask"
+  style="background-color: rgba(0, 0, 0, 0.7); height: 100%;"
+>
+  <div
+    class="d-flex  justify-content-center  h-100"
+  >
+    <div class="text-white text-center">
+      <h2 class="fw-bold fs-1 text-center p-2">About NDA</h2>
+      <div class="container p-2">
+        <p class="fs-5">
+          The details provided below is basic information on a career in defence
+          as NDA. For more information, you can visit the UPSC website. You
+          should join one of the best NDA coaching in India with SSB for high
+          defence selection chances.
+        </p>
+        <p class="fs-5">
+          <strong>The National Defence Academy (NDA)</strong> is the Joint
+          Services academy of the Indian Armed Forces that provide training to 3
+          sectors of the Indian Armed forces, the Army, the Navy and the Air
+          Force. The NDA is located in Khadakwasla near Pune, Maharashtra. It is
+          the first tri-service academy in the world. Apart from it, there is
+          also an entry to <strong>Naval Academy (NA)</strong> which is located
+          in Ezhimula, Kerala. The candidates willing to join Indian Navy as a
+          technical Officer can opt for Naval Academy as their first choice.
+        </p>
+        <p class="fs-5">
+          NDA alumni have led and fought in every major conflict in which the
+          Indian Armed Forces has been called to action since the academy was
+          established. The alumni include
+          <strong>3 Param Vir Chakra</strong> recipients and
+          <strong> 9 Ashoka Chakra recipients.</strong>
+        </p>
+        <p class="fs-5">
+          The objective of NDA is to provide high quality academic as well as
+          technological training to its cadets in order to enable them to
+          provide the best service in their respective careers. Furthermore, the
+          pay and benefits start along with their training itself.
+        </p>
+        <p class="fs-5">
+          The training at NDA is rigorous. In addition to service training for
+          the Army, Navy and Air Force, the cadets are also taught academics to
+          cover the graduation level degree in Arts, Sciences or Computers. The
+          training at NDA is broken into six terms and the total duration of
+          training is three years. Once their training is concluded, the cadets
+          are awarded their bachelor’s degree at the passing out parade of NDA.
+          <strong>Dronacharya Academy</strong> will guide you to achieve your
+          NDA dream by one of the best faculties of NDA coaching in India.
+        </p>
+      </div> 
+    </div>
+  </div>
+</div>
+</div>
+
+    <div class="container-fluid">
+      <div class="card p-2 border-0">
+        <div
+          class="card-header  mx-auto text-white w-100 fs-4 fw-bold"
+          style="background-color: #1a237e;"
+        >
+          What is the Eligibility of appearing for NDA?
+        </div>
+        <div class="table-responsive">
+          <table class="table table-bordered table-hover w-100" id="example">
+            <!-- your table content goes here -->
+            <thead class="text-center fs-4  ">
+              <tr>
+                <th width="93"><strong>CRITERIA</strong></th>
+                <th width="143"><strong>Army</strong></th>
+                <th width="150"><strong>Navy</strong></th>
+                <th width="155"><strong>Airforce</strong></th>
+                <th width="161"><strong>Naval Academy</strong></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td width="93"><strong>Age</strong></td>
+                <td colspan="4" width="609">
+                  16.5-19.5 Years as on Commencement Date of Course (generally
+                  01 Jan / 01 July)
+                </td>
+              </tr>
+              <tr>
+                <td width="93"><strong>Gender</strong></td>
+                <td colspan="4" width="609">Male</td>
+              </tr>
+              <tr>
+                <td width="93"><strong>Educational Qualification</strong></td>
+                <td width="143">
+                  12<sup>th</sup> Class Pass of 10+2 pattern school or
+                  equivalent exam conducted by State Board / Universities
+                </td>
+                <td colspan="3" width="466">
+                  12<sup>th</sup> Class Pass with Maths and Physics as subjects
+                  in 10+2 pattern school or equivalent exam conducted by State
+                  Board / Universities
+                </td>
+              </tr>
+              <tr>
+                <td width="93"><strong>Height and Weight</strong></td>
+                <td width="143">
+                  Minimum height: 152 cms, weight: 42.5 Kg for 16-Year-Old
+                  candidate
+                </td>
+                <td width="150">
+                  Minimum height: 152 cms, weight: 44 Kg for 16-Year-Old
+                  candidate
+                </td>
+                <td width="155">
+                  Minimum height: 152 cms, weight: 42.5 Kg for the 16-Year-Old
+                  candidate.<br />
+                  Leg Length: Min – 99 cms. Max – 120 cms.Thigh Length : Max –
+                  64 cm Sitting Height : Min – 81.5 cms.Max – 96 cms.
+                </td>
+                <td width="161">
+                  Minimum height: 152 cms, weight: 44 Kg for the 16-Year-Old
+                  candidate
+                </td>
+              </tr>
+              <tr>
+                <td width="93"><strong>Vision</strong></td>
+                <td width="143">
+                  Uncorrected Without Glass: 6/6&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  6/9
+                  <p></p>
+                  <p>
+                    Corrected with Glass:
+                    6/6&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 6/6
+                  </p>
+                  <p>Limits of Myopia: -2.5D</p>
+                  <p>Limits of Hypermetropia: +3.5</p>
+                  <p>Limits of Color Perception: CP III</p>
+                  <p>Binocular Vision III</p>
+                </td>
+                <td width="150">
+                  Uncorrected Without Glass: 6/6&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  6/9
+                  <p></p>
+                  <p>
+                    Corrected with Glass:
+                    6/6&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 6/6
+                  </p>
+                  <p>Limits of Myopia: -0.75</p>
+                  <p>Limits of Hypermetropia: +1.5</p>
+                  <p>Limits of Color Perception: CP I</p>
+                  <p>Binocular Vision III</p>
+                </td>
+                <td width="155">
+                  Minimum distant vision 6/6 in one eye and 6/9 in other
+                  correctable to 6/6 only in Hypermetropia
+                  <p></p>
+                  <p>Limits of Color Perception: CP I</p>
+                  <p>Limits of Myopia: Nil</p>
+                  <p>Limits of Hypermetropia: +2.0D</p>
+                </td>
+                <td width="161">
+                  Uncorrected Without Glass: 6/6&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  6/9
+                  <p></p>
+                  <p>
+                    Corrected with Glass:
+                    6/6&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 6/6
+                  </p>
+                  <p>Limits of Myopia: -0.75</p>
+                  <p>Limits of Hypermetropia: +1.5</p>
+                  <p>Limits of Color Perception: CP I</p>
+                  <p>Binocular Vision III</p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid mt-3">
+    <div class="card">
+      <div class="card-header  m-auto text-white w-100 fs-4 fw-bold " style="background-color: #1a237e;">
+          What is Naval Academy?       
+      </div>
+      <div class="card-body">
+        <p class="card-text fs-6 mx-lg-5">
+          <strong>Naval Academy (NA)</strong> is another wing of Indian Defence
+          where the candidates willing to join the Indian Navy in the Technical
+          domain are selected. The cadets for the 10+2 Cadet Entry scheme will
+          be awarded B. Tech Degree (4 Years) on successful completion of
+          training at Indian Naval Academy, Ezhimala, Kerala.
+        </p>
+        <h5 class="card-title mx-lg-5 fw-bold">
+          What is there any relaxation/reservation given to candidates?
+        </h5>
+        <p class="card-text fs-6 mx-lg-5">
+          There is absolutely no exemption in any eligibility pattern for any
+          candidate whether belonging to any caste. The only FEE exemption
+          provided to SC / ST Candidates, Son of JCO’s, NCO’s, OR’s.
+        </p>
+        <h5 class="card-title mx-lg-5 fw-bold">
+          What is there any minimum percentage required in Class XII?
+        </h5>
+        <p class="card-text fs-6 mx-lg-5">
+          <b class="fs-5">No</b>, To appear for NDA Exam you need to score
+          passing marks in Class 12th, whereas students with Commerce background
+          are also eligible for NDA Exam, but the entrance exam will comprise
+          all subjects, i.e. Maths, Physics, Chemistry, General Science, GK,
+          etc.
+        </p>
+        <p class="card-text fs-6 mx-lg-5">
+          Though there isno minimum marks required to appear for NDA but we
+          recommend that the candidate should score a good percentage of marks
+          in their board exams for a better prospect of Selection.
+        </p>
+        <h5 class="card-title mx-lg-5 fw-bold">
+          What is the Process of Examination / Selection?
+        </h5>
+        <p class="card-text fs-6 mx-lg-5">
+          The candidates can apply for the NDA exam only through Online Mode
+          through UPSC website (www.upsc.gov.in). The NDA entry involves a
+          Written Exam, SSB, Medical and then the final merit list is made for
+          the recommended candidates. To crack the NDA exam Join us we are on
+          the way to be the best NDA coaching in India.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid mt-3">
+    <div class="card mb-3">
+      <img
+        src="./img/about-nda.jpeg"
+        class="card-img-top"
+        alt="selcetion image"
+      />
+      <div class="card-body">
+        <p class="card-text fs-6 mx-lg-5">
+          <b>Phase 1.</b> Written Exam is a common entrance exam for all
+          candidates opting for NDA or NA, which comprises of two separate Tests
+          which are conducted on the same day. <br />
+          Paper I is Mathematics and comprises of 120 Questions of 2.5 Marks
+          each. Negative marking of 0.33 mark is also there for every wrong
+          answer. <br />
+          Paper II is General Ability Test and comprises of 150 Questions of 4
+          Marks each. Negative marking of 1 mark is also there for every wrong
+          answer.
+        </p>
+        <p class="card-text fs-6 mx-lg-5">
+          <b> Phase 2.</b> The qualified candidates of the written exam are then
+          called for SSB process at the Service Selection Board Centers. After
+          having cleared the written examination the candidates should log on to
+          the following websites for their SSB Center & Date of Interview:-
+          <br />
+          <b>www.joinindianarmy.nic.in</b><br />
+          <b>www.joinindiannavy.gov.in</b><br />
+          <b>www.careerindianairforce.cdac.in</b><br />
+          SSB is an extensive 5-day process which comprises of Screening Test,
+          GTO, Individual Test, Interview. Candidates with Air Force as one of
+          the choice would also undergo CPSS if they qualify SSB and are
+          willing.
+        </p>
+        <p class="card-text fs-6 mx-lg-5">
+          <b>Phase 3.</b> Those candidates who qualify the SSB process are then
+          called for Medical Examination by Air Force Selection Board.
+        </p>
+        <p class="card-text fs-6 mx-lg-5 ">
+          <b>Phase 4.</b> The Final Merit is prepared on the basis of Written Exam, SSB Interview and Medical Test.
+        </p>
+      </div>
+    </div>
+  </div>
+
+ 
+    <!-------------- modal start----------------->
+
+<button type="button" id="btn-enquiry"  style="background-color: #1a237e;box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);color:white;" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">QUICK ENQUIRY <i class="fas fa-arrow-up"></i></button>
+
+<div class="modal fade btn-enquiry" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-end">
+    <div class="modal-content" style="background-color: #1d6792;">
+      
+      <div class="modal-header">
+        <h1 class="modal-title fs-4 text-white" id="exampleModalLabel">REGISTRATION</h1>
+        <button type="button" class="btn-close text-white bg-light" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      
+      <div class="modal-body">
+        <form>
+          
+          <div class="mb-3">
+            <!-- <label for="recipient-name" class="col-form-label">Name</label> -->
+            <input type="text" class="form-control border-0  border-2  rounded-0" id="recipient-name" placeholder="Name" required>
+          </div>
+          <div class="mb-3">
+            <!-- <label for="recipient-email" class="col-form-label">Email</label> -->
+            <input type="email" class="form-control border-0  border-2  rounded-0" id="recipient-email" placeholder="Email" required>
+          </div>
+
+          <div class="mb-3">
+            <!-- <label for="recipient-phone" class="col-form-label">Phone</label> -->
+            <input type="tel" class="form-control border-0  border-2  rounded-0" id="recipient-phone" placeholder="Phone No" required>
+          </div>
+
+          <div class="mb-3">
+            <!-- <label for="recipient-phone" class="col-form-label">Select one option</label> -->
+            <select class="form-select border-0  border-2  rounded-0" aria-label="Default select example" required>
+              <option selected class="text-white" >Select one option</option>
+              <option class="text-black">Google</option>
+              <option class="text-black">Social Media</option>
+              <option class="text-black">TV</option>
+              <option class="text-black">Radio</option>
+              <option class="text-black">Friend and Family</option>
+            </select>
+          </div>
+
+          <div class="mb-3">
+            <!-- <label for="message-text" class="col-form-label">Message:</label> -->
+            <textarea class="form-control border-0  border-2 rounded-0" id="message-text" placeholder="message"></textarea>
+          </div>
+
+        </form>
+      </div>
+        <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+        <button type="submit" class="btn  w-25 mb-3 text-center text-white" style="margin: 0 auto;background-color: #1a237e;">Submit</button>
+    </div>
+  </div>
+</div>
+<!-------------- modal end ---------------->
+
+
+    <div class="add-button p-2">
+        <a href="https://wa.me/8273373357">
+            <img src="img/whatsapp.png" alt="whatsapp" style="color: #1eac02; width: 60%;">
+        </a>
+    </div>
+
+    <!-- footer section start  -->
+   <footer class="text-center text-lg-start bg-dark py-3 text-white">
+    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+      <div class="me-lg-5 mb-4">
+        <span>Get connected with us on social networks:</span>
+      </div>
+  
+      <div>
+        <a href="https://www.facebook.com/ranaankit.dehradun/" class="me-4 text-reset">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="#" class="me-4 text-reset">
+          <i class="fab fa-linkedin"></i>
+        </a>
+       
+        <a href="https://www.instagram.com/dronaddun/" class="me-4 text-reset">
+          <i class="fab fa-instagram"></i>
+        </a>
+       
+      </div>
+    </section>
+
+    <section class="container-fluid text-center text-md-start mt-5">
+      <div class="row mt-3">
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <h4 class="text-uppercase fw-bold mb-4">DRONACHARYA</h4>
+          <p>
+            DRONACHARYA is one of the leading coaching institutes committed to
+            providing premium quality education to the students who are
+            willing to appear in any competitive exams
+          </p>
+        </div>
+
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <h6 class="text-uppercase fw-bold mb-4">Featured Links</h6>
+          <p><a href="index.html" class="text-reset">Home</a></p>
+          <p><a href="about-us.html" class="text-reset">About</a></p>
+          <p><a href="courses.html" class="text-reset">Courses</a></p>
+          <p><a href="contact.html" class="text-reset">Contact</a></p>
+        </div>
+
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <h6 class="text-uppercase fw-bold mb-4">COACHING</h6>
+          <p><a href="gate.html" class="text-reset">GATE</a></p>
+          <p><a href="defence.html" class="text-reset">DEFENCE</a></p>
+          <p><a href="#" class="text-reset">PSU </a></p>
+          <p><a href="ssc-je.html" class="text-reset">SSC JE</a></p>
+        </div>
+
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4" id="footer-add">
+          <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+          <p class="mb-1">
+            <i class="fas fa-home me-3"></i><a href="https://maps.app.goo.gl/4wfXp9JYuqv8EDC68">Ojaswi Complex – Top
+              Floor, General Mahadev Singh Rd, Ballupur
+              Chowk, Ballupur, Dehradun, Uttarakhand 248001</a>
+          </p>
+          <p class="mb-1">
+            <i class="fas fa-phone me-2"></i><a href="tel:9412611114">9412611114</a>
+          </p>
+          <p class="mb-1">
+            <i class="fas fa-phone me-2"></i><a href="tel:8273373357">8273373357</a>
+          </p>
+        </div>
+      </div>
+    </section>
+  </footer>
+
+  <div class="text-center p-2" style="background-color:#1a237e;color:white;">
+    © 2023 Copyright:
+    <a class="text-reset fw-bold" href="https://www.vervegen.com" style="text-decoration: none;">
+      Vervegen Tech Pvt Ltd</a>
+  </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+      integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript">
+      $(".owl-carousel").owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: false,
+        autoplay: true,
+        autoplayTimeout: 5000, // Adjust this value to control the speed
+        dots: false,
+        responsive: {
+          0: {
+            items: 1
+          },
+          600: {
+            items: 2
+          },
+          1000: {
+            items: 3
+          }
+        }
+      });
+    </script>
+  </body>
+</html>
